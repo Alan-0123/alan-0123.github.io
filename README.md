@@ -9,6 +9,7 @@
 ```
 .
 ├── index.html                    # 页面主文件（所有文字内容在这里修改）
+├── deploy.ps1                    # 一键发布脚本（改完内容后运行它）
 ├── assets/
 │   ├── css/style.css             # 样式表（颜色、字体、布局）
 │   ├── js/main.js                # 交互脚本（菜单、动效，一般无需改动）
@@ -44,6 +45,38 @@
 # 在项目根目录执行，然后浏览器打开 http://localhost:8000
 python -m http.server 8000
 ```
+
+## 日常更新与发布（改完 index.html 后怎么办）
+
+改完 `index.html`（或替换了图片）后，让修改上线只需以下两种方式任选其一。
+
+### 方式一（推荐）：一键发布
+
+在项目根目录打开 PowerShell，执行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File deploy.ps1
+```
+
+想自定义提交说明时：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File deploy.ps1 -Message "更新了项目描述"
+```
+
+脚本会自动完成：检查修改 → 提交 → 推送 → 等待部署（约 1 分钟）→ 验证线上可访问，全程无需其他操作。没有修改时运行会直接提示「没有需要发布的修改」。
+
+### 方式二：手动三条命令
+
+```bash
+git add -A
+git commit -m "说明这次改了什么"
+git push origin main
+```
+
+推送后约 1 分钟自动上线，可在仓库 [Actions 页](https://github.com/Alan-0123/alan-0123.github.io/actions) 查看部署进度。
+
+> 小技巧：把 `powershell -ExecutionPolicy Bypass -File deploy.ps1` 存成一个 `.bat` 文件（或快捷方式）放在项目根目录，以后双击即可发布。
 
 ## 部署方式
 
