@@ -12,6 +12,9 @@ param(
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
+# 切换到脚本所在目录，保证从任意位置（含右键「使用 PowerShell 运行」）都能正确执行
+Set-Location -LiteralPath $PSScriptRoot
+
 $Repo       = "Alan-0123/alan-0123.github.io"
 $Branch     = "main"
 $LiveUrl    = "https://alan-0123.github.io/"
