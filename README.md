@@ -2,7 +2,7 @@
 
 一个部署在 GitHub Pages 上的个人作品集静态网站，包含个人简介、精选项目、技能专长与联系方式四大板块，采用响应式设计，适配桌面与移动端。
 
-**线上地址**：<https://alan-0123.github.io/github.io/>
+**线上地址**：<https://alan-0123.github.io/>
 
 ## 目录结构
 
@@ -67,10 +67,9 @@ python -m http.server 8000
 
 替换为任意 OKLCH / 十六进制颜色即可整站换色。
 
-## 小贴士：获得更简洁的访问地址
+## 关于仓库命名
 
-当前仓库名为 `github.io`，站点地址为 `alan-0123.github.io/github.io/`。
-若希望直接通过 `https://alan-0123.github.io/` 访问，可在 GitHub 上将仓库重命名为 `alan-0123.github.io`（Settings → General → Repository name）。网站内部全部使用相对路径，重命名后无需修改任何代码。
+仓库已命名为 `alan-0123.github.io`，符合 GitHub Pages 用户站命名规则（`<用户名>.github.io`），因此站点直接托管在根路径 `https://alan-0123.github.io/` 下。请勿将仓库改回其他名称，否则站点地址会变为带子路径的形式。
 
 ## 技术说明
 
