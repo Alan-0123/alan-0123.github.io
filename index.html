@@ -8,7 +8,7 @@
   <meta property="og:title" content="Alan · 高级产品经理 — 个人作品集">
   <meta property="og:description" content="专注数据产品、AI 应用与增长的资深产品经理。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/project-analytics.jpg">
+  <meta property="og:image" content="assets/images/project-yiwei.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a3412'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23fdf8f2' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,128 +87,60 @@
         <header class="section-head reveal">
           <p class="section-index">01</p>
           <h2 class="section-title">精选项目</h2>
-          <p class="section-note">四个我愿意署名的作品——每个都讲清一个问题、一组取舍和一段结果。</p>
+          <p class="section-note">两个我从问题定义写到代码上线的作品——每个都讲清一个问题、一组取舍和一段结果。</p>
         </header>
 
         <div class="project-list">
 
-          <!-- 项目一 -->
+          <!-- 项目一：易维 -->
           <article class="project reveal">
-            <a class="project-media" href="https://example.com/case-analytics" target="_blank" rel="noopener">
-              <img src="assets/images/project-analytics.jpg"
-                   alt="数据智能分析平台界面预览：暖白背景的看板，折线图与指标卡用朱红色强调" loading="lazy" width="1280" height="720">
-            </a>
+            <div class="project-media">
+              <img src="assets/images/project-yiwei.jpg"
+                   alt="易维多租户管理平台界面预览：暖白背景的管理后台，左侧导航、租户切换与数据表格用朱红色强调" loading="lazy" width="1280" height="720">
+            </div>
             <div class="project-body">
-              <p class="project-index">01 / 数据产品</p>
-              <h3 class="project-title">
-                <a href="https://example.com/case-analytics" target="_blank" rel="noopener">零售数据智能分析平台 · 重构</a>
-              </h3>
+              <p class="project-index">01 / 企业级平台</p>
+              <h3 class="project-title">易维 · 企业级多租户管理平台</h3>
               <p class="project-desc">
-                接手时看板月使用率不足 20%，业务同学宁愿导出 Excel。
-                重构的核心不是加图表，而是重新定义指标口径与权限模型——
-                让区域经理打开首页就能回答「今天哪些门店在报警」。
-                核心链路从 7 步压缩到 3 步，季度活跃账号增长 3.2 倍。
+                每个企业系统都在重复造轮子：登录鉴权、组织权限、租户隔离。
+                我把这些「不性感但绕不开」的部分沉淀成一套前后端一体的 SaaS 底座——
+                租户上下文随线程自动透传，数据权限在 SQL 层拼接过滤条件，
+                再配一个代码生成器，让台账、进销存这类业务模块能以天为单位长出来。
+                前端 Vue3 + TS + Vite 7，后端 Spring Boot 4，本地加分布式双层缓存。
               </p>
               <ul class="project-tags" aria-label="项目标签">
-                <li>B 端 SaaS</li>
-                <li>指标体系</li>
-                <li>权限重构</li>
+                <li>多租户 SaaS</li>
+                <li>RBAC 权限</li>
+                <li>代码生成</li>
+                <li>前后端一体</li>
               </ul>
-              <p class="project-meta">产品负责人 · 6 人产研团队 · 2023–2024</p>
-              <p class="project-links">
-                <a class="text-link" href="https://example.com/case-analytics" target="_blank" rel="noopener">查看案例</a>
-                <a class="text-link" href="https://github.com/Alan-0123" target="_blank" rel="noopener">GitHub</a>
-              </p>
+              <p class="project-meta">独立设计并开发 · 2026.03 – 08 持续迭代</p>
             </div>
           </article>
 
-          <!-- 项目二 -->
+          <!-- 项目二：药记录 -->
           <article class="project project--flip reveal">
-            <a class="project-media" href="https://example.com/case-ai-service" target="_blank" rel="noopener">
-              <img src="assets/images/project-ai-chat.jpg"
-                   alt="AI 智能客服系统界面预览：会话卡片与意图识别标签，朱红色点缀" loading="lazy" width="1280" height="720">
-            </a>
-            <div class="project-body">
-              <p class="project-index">02 / AI 应用</p>
-              <h3 class="project-title">
-                <a href="https://example.com/case-ai-service" target="_blank" rel="noopener">AI 智能客服 · 从 0 到 1</a>
-              </h3>
-              <p class="project-desc">
-                电商客户咨询高峰期排队 40 分钟，人工坐席成本占客服预算六成。
-                我主导了从场景分层开始的完整设计：先让 AI 兜住 60% 的标准问题，
-                再把「什么时候转人工」做成产品里最重要的一个决策点。
-                上线后意图识别准确率 91%，人工转接量下降 47%。
-              </p>
-              <ul class="project-tags" aria-label="项目标签">
-                <li>LLM 应用</li>
-                <li>人机协作</li>
-                <li>0 到 1</li>
-              </ul>
-              <p class="project-meta">产品主理 · 9 人跨职能团队 · 2024–2025</p>
-              <p class="project-links">
-                <a class="text-link" href="https://example.com/case-ai-service" target="_blank" rel="noopener">查看案例</a>
-                <a class="text-link" href="https://github.com/Alan-0123" target="_blank" rel="noopener">GitHub</a>
-              </p>
+            <div class="project-media">
+              <img src="assets/images/project-yaojilu.jpg"
+                   alt="药记录小程序界面预览：三块手机屏展示今日用药清单、药箱余量卡与月历打卡，朱红色点缀" loading="lazy" width="1280" height="720">
             </div>
-          </article>
-
-          <!-- 项目三 -->
-          <article class="project reveal">
-            <a class="project-media" href="https://example.com/case-membership" target="_blank" rel="noopener">
-              <img src="assets/images/project-membership.jpg"
-                   alt="会员增长体系界面预览：三块手机屏幕展示会员等级卡片与权益页" loading="lazy" width="1280" height="720">
-            </a>
             <div class="project-body">
-              <p class="project-index">03 / 用户增长</p>
-              <h3 class="project-title">
-                <a href="https://example.com/case-membership" target="_blank" rel="noopener">会员权益体系 · 留存增长</a>
-              </h3>
+              <p class="project-index">02 / 产品 0→1</p>
+              <h3 class="project-title">药记录 · 慢性病用药管理小程序</h3>
               <p class="project-desc">
-                会员付费后 30 日留存仅 34%，权益「看得见、用不上」。
-                我们用三个实验找到了真正影响续费的两类权益，
-                砍掉了一半的 SKU，把签到、兑换和到期提醒重连成一条行为链路。
-                90 天后 30 日留存提升至 52%，续费率提升 18%。
+                长期服药的人只有两个敌人：忘了吃、断了药。
+                这是一次完整的产品闭环——先用高保真原型推敲「临近服药提醒」的触发时机，
+                再用 uni-app 落地微信小程序：今日打卡、药箱余量预警、月历视图、
+                可保存分享的用药月报。后端用 Node.js 与 Spring Boot 各实现一版，
+                亲手验证两种选型后再做取舍。
               </p>
               <ul class="project-tags" aria-label="项目标签">
-                <li>增长实验</li>
-                <li>会员体系</li>
-                <li>留存设计</li>
+                <li>微信小程序</li>
+                <li>产品原型</li>
+                <li>uni-app</li>
+                <li>全栈实现</li>
               </ul>
-              <p class="project-meta">增长产品经理 · 数据 + 设计 + 运营 · 2022–2023</p>
-              <p class="project-links">
-                <a class="text-link" href="https://example.com/case-membership" target="_blank" rel="noopener">查看案例</a>
-                <a class="text-link" href="https://github.com/Alan-0123" target="_blank" rel="noopener">GitHub</a>
-              </p>
-            </div>
-          </article>
-
-          <!-- 项目四 -->
-          <article class="project project--flip reveal">
-            <a class="project-media" href="https://example.com/case-workflow" target="_blank" rel="noopener">
-              <img src="assets/images/project-workflow.jpg"
-                   alt="产研协作中台界面预览：看板视图的任务卡片，朱红色状态标签" loading="lazy" width="1280" height="720">
-            </a>
-            <div class="project-body">
-              <p class="project-index">04 / 内部工具</p>
-              <h3 class="project-title">
-                <a href="https://example.com/case-workflow" target="_blank" rel="noopener">产研协作中台 · 效率工具</a>
-              </h3>
-              <p class="project-desc">
-                需求散落在五个系统里，评审靠口头，交付状态靠问。
-                这套内部中台把需求池、评审流和发布日历合并成单一事实源，
-                并为管理者做了一页「交付健康度」视图。
-                中型需求平均交付周期从 4 周缩短到 9 天，全员周活跃 87%。
-              </p>
-              <ul class="project-tags" aria-label="项目标签">
-                <li>内部平台</li>
-                <li>流程再造</li>
-                <li>降本增效</li>
-              </ul>
-              <p class="project-meta">产品经理 · 内部平台组 · 2021–2022</p>
-              <p class="project-links">
-                <a class="text-link" href="https://example.com/case-workflow" target="_blank" rel="noopener">查看案例</a>
-                <a class="text-link" href="https://github.com/Alan-0123" target="_blank" rel="noopener">GitHub</a>
-              </p>
+              <p class="project-meta">独立产品 · 原型 → 前端 → 双后端 · 2026.08</p>
             </div>
           </article>
 
