@@ -3,93 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alan · 高级产品经理 — 个人作品集</title>
-  <meta name="description" content="Alan 的个人作品集：8 年 B 端产品经验，专注数据产品、AI 应用与增长。精选项目、技能专长与联系方式。">
-  <meta property="og:title" content="Alan · 高级产品经理 — 个人作品集">
-  <meta property="og:description" content="专注数据产品、AI 应用与增长的资深产品经理。">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/project-yiwei.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239a3412'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23fdf8f2' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <title>林远 · 个人简历</title>
+  <meta name="description" content="林远的个人简历网站 — 全栈工程师 / 独立开发者">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23201A12'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23F7F2E9' font-family='serif'%3E%E6%9E%97%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="grain" aria-hidden="true"></div>
 
-  <!-- ===================== 顶部导航 ===================== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="回到顶部">
-        <span class="brand-mark" aria-hidden="true">A<span class="brand-dot">.</span></span>
-        <span class="brand-name">Alan</span>
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true">林</span>
+        <span class="logo-text">林远<em>/</em>LIN&nbsp;YUAN</span>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="打开菜单">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-
-      <nav class="site-nav" id="siteNav" aria-label="主导航">
-        <ul class="nav-list">
-          <li><a href="#projects" class="nav-link">项目</a></li>
-          <li><a href="#skills" class="nav-link">技能</a></li>
-          <li><a href="#about" class="nav-link">关于</a></li>
-          <li><a href="#contact" class="nav-link">联系</a></li>
-          <li><a href="mailto:hello.alan@example.com" class="nav-link nav-link--cta">找到我</a></li>
-        </ul>
+      <nav class="site-nav" id="site-menu" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#experience">经历</a>
+        <a href="#works">作品</a>
+        <a href="resume.html">个人简历</a>
+        <a href="#contact" class="nav-cta">联系我</a>
       </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main id="main">
-
-    <!-- ===================== 首屏 · 个人简介 ===================== -->
-    <!-- 编辑提示：替换姓名、职位定位、一句话介绍与底部元信息 -->
-    <section class="hero" aria-label="个人简介">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <p class="hero-kicker reveal">作品集 / Portfolio · 2026</p>
-
-        <h1 class="hero-title">
-          <span class="hero-name reveal">Alan<em class="hero-name-tail">,</em></span>
-          <span class="hero-role reveal">一名相信「数据要说人话」的<br>高级产品经理。</span>
-        </h1>
-
-        <p class="hero-lede reveal">
-          八年 B 端产品生涯，专注数据产品、AI 应用与用户增长。
-          我擅长把复杂问题拆成可以交付的版本，把模糊机会变成可以度量的结果——
-          最近一件让我骄傲的事，是让一个日活不足的内部平台变成了业务团队每天主动打开的工作台。
-        </p>
-
-        <div class="hero-actions reveal">
-          <a class="btn btn--primary" href="#projects">查看项目作品</a>
-          <a class="btn btn--ghost" href="#contact">和我聊聊合作</a>
+        <div class="hero-text">
+          <p class="hero-kicker reveal">个人简历 · RESUME · 2026</p>
+          <h1 class="hero-title reveal" id="hero-title">
+            你好，我是 <em>林远</em>
+            <span class="hero-name-en">LIN&nbsp;YUAN</span>
+          </h1>
+          <p class="hero-sub reveal">全栈工程师 · 独立开发者</p>
+          <p class="hero-desc reveal">
+            8 年互联网从业经验，专注用代码解决真实问题。做过面向百万用户的产品，
+            也独立打造过从 0 到 1 的小工具。相信简洁的代码和克制的设计。
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#works" class="btn btn-primary">查看作品<span aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn-ghost">联系我</a>
+          </div>
+          <dl class="hero-stats reveal">
+            <div><dt>8<sup>+</sup></dt><dd>年经验</dd></div>
+            <div><dt>30<sup>+</sup></dt><dd>交付项目</dd></div>
+            <div><dt>12</dt><dd>奖项荣誉</dd></div>
+          </dl>
         </div>
-
-        <p class="hero-meta reveal">
-          <span>8 年产品经验</span>
-          <span aria-hidden="true">·</span>
-          <span>上海 · 开放远程</span>
-          <span aria-hidden="true">·</span>
-          <span>当前状态：考虑新机会</span>
-        </p>
+        <aside class="hero-side reveal" aria-label="头像与签名">
+          <div class="portrait-card">
+            <div class="portrait" role="img" aria-label="林远的头像占位图">
+              <svg viewBox="0 0 200 200" aria-hidden="true">
+                <defs>
+                  <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#C04A1D"/>
+                    <stop offset="1" stop-color="#8E3310"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="100" fill="url(#pg)"/>
+                <circle cx="100" cy="86" r="30" fill="#F7F2E9" opacity="0.92"/>
+                <path d="M40 200c4-42 30-62 60-62s56 20 60 62Z" fill="#F7F2E9" opacity="0.92"/>
+                <text x="100" y="112" text-anchor="middle" font-family="serif" font-size="46" fill="#201A12" opacity="0.85">林</text>
+              </svg>
+            </div>
+            <div class="portrait-meta">
+              <strong>林远</strong>
+              <span>全栈工程师 · 现居上海</span>
+            </div>
+            <div class="stamp" aria-hidden="true">设计 · 开发<br>EST. 2016</div>
+          </div>
+        </aside>
       </div>
-
-      <p class="hero-ornament" aria-hidden="true">产品 · 数据 · 增长</p>
+      <div class="container hero-rule" aria-hidden="true"><span>SCROLL</span></div>
     </section>
 
-    <!-- ===================== 精选项目 ===================== -->
-    <!-- 编辑提示：每个 <article> 是一个项目。修改标题、描述、meta 标签、
-         预览图（assets/images/ 目录）与链接即可。建议保留 3–5 个最有代表性的项目。 -->
-    <section class="section" id="projects">
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-index">01</p>
-          <h2 class="section-title">精选项目</h2>
-          <p class="section-note">两个我从问题定义写到代码上线的作品——每个都讲清一个问题、一组取舍和一段结果。</p>
+          <span class="section-no">01</span>
+          <h2 id="about-title">关于我<span class="title-en">About</span></h2>
         </header>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              我是林远，一名全栈工程师。2016 年从计算机科学专业毕业后进入互联网行业，
+              先后在电商与 SaaS 领域工作，主导过支付网关重构、低代码平台搭建等核心项目。
+            </p>
+            <p>
+              工作之余喜欢做独立产品：写过效率小工具、开源过组件库，也维护着一个
+              技术博客。对工程美学有一点执念——好代码和好设计一样，都应该克制而精确。
+            </p>
+          </div>
+          <dl class="about-facts reveal">
+            <div><dt>所在地</dt><dd>上海 · 可远程</dd></div>
+            <div><dt>邮箱</dt><dd><a href="mailto:hello@linyuan.dev">hello@linyuan.dev</a></dd></div>
+            <div><dt>状态</dt><dd><span class="dot" aria-hidden="true"></span>开放机会中</dd></div>
+            <div><dt>语言</dt><dd>中文 · English</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
 
+    <!-- SKILLS -->
+    <section class="section section-tint" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">02</span>
+          <h2 id="skills-title">专业技能<span class="title-en">Skills</span></h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <div class="skill-bar">
+              <div class="skill-bar-head"><span>前端开发</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-head"><span>后端 &amp; 架构</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-head"><span>数据 &amp; 算法</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-head"><span>UI / UX 设计</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
+            </div>
+          </div>
+          <div class="skill-chips reveal">
+            <span class="chip">TypeScript</span><span class="chip">React</span>
+            <span class="chip">Vue</span><span class="chip">Node.js</span>
+            <span class="chip">Python</span><span class="chip">Go</span>
+            <span class="chip">PostgreSQL</span><span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span><span class="chip">Figma</span>
+            <span class="chip">GraphQL</span><span class="chip">Rust</span>
+            <p class="chips-note">工具与语言会更新，解决问题的能力不会。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">03</span>
+          <h2 id="exp-title">工作经历<span class="title-en">Experience</span></h2>
+        </header>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-when">2021 — 至今</div>
+            <div class="timeline-body">
+              <h3>高级全栈工程师 <span class="timeline-org">@ 云帆科技</span></h3>
+              <p>负责低代码平台核心引擎与运行时，服务 200+ 企业客户；带领 6 人小组完成多端渲染架构升级，页面性能提升 3 倍。</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">2018 — 2021</div>
+            <div class="timeline-body">
+              <h3>全栈工程师 <span class="timeline-org">@ 极客电商</span></h3>
+              <p>主导支付网关重构，支撑大促期间每秒 2 万笔订单；搭建内部监控告警体系，线上故障平均恢复时间下降 60%。</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">2016 — 2018</div>
+            <div class="timeline-body">
+              <h3>初级前端工程师 <span class="timeline-org">@ 星河互娱</span></h3>
+              <p>从活动页开发起步，快速成长为项目组前端负责人；沉淀组件规范并在团队内推广。</p>
+            </div>
+          </li>
+        </ol>
+        <div class="education reveal">
+          <span class="section-no">03.1</span>
+          <div>
+            <h3>教育背景 <span class="timeline-org">2012 — 2016</span></h3>
+            <p>郑州航空工业管理学院 · 计算机科学与技术 · 学士学位。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS / 项目经验 -->
+    <section class="section section-tint" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-no">04</span>
+          <h2 id="works-title">代表作品<span class="title-en">Works</span></h2>
+        </header>
+        <p class="section-note reveal">两个我从问题定义写到代码上线的作品——每个都讲清一个问题、一组取舍和一段结果。</p>
         <div class="project-list">
 
           <!-- 项目一：易维 -->
@@ -148,154 +260,104 @@
       </div>
     </section>
 
-    <!-- ===================== 技能专长 ===================== -->
-    <!-- 编辑提示：按能力域分组，每组保留一句「怎么用」的说明，避免堆砌 logo -->
-    <section class="section section--tinted" id="skills">
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-index">02</p>
-          <h2 class="section-title">技能专长</h2>
-          <p class="section-note">与其罗列工具，不如说明我在每个能力域里真正做过什么。</p>
+          <span class="section-no">05</span>
+          <h2 id="contact-title">联系我<span class="title-en">Contact</span></h2>
         </header>
-
-        <div class="skills-grid">
-          <div class="skill reveal">
-            <h3 class="skill-title">产品策略与规划</h3>
-            <p class="skill-desc">
-              从市场洞察到可执行的路线图。习惯先回答「为什么值得做」，
-              再回答「先做哪一个」——用 RICE 和机会成本说话，而不是用嗓门。
-            </p>
-            <ul class="skill-tags" aria-label="相关技能">
-              <li>竞品研究</li><li>需求优先级</li><li>路线图规划</li><li>商业化设计</li>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>如果你有合适的机会、合作想法，或只是想聊聊技术，欢迎随时写信给我。</p>
+            <ul class="contact-list">
+              <li><span>邮箱</span><a href="mailto:hello@linyuan.dev">hello@linyuan.dev</a></li>
+              <li><span>微信</span>linyuan_dev</li>
+              <li><span>GitHub</span><a href="https://github.com" rel="noopener" target="_blank">github.com/linyuan</a></li>
+              <li><span>博客</span><a href="#" rel="noopener">blog.linyuan.dev</a></li>
             </ul>
           </div>
-
-          <div class="skill reveal">
-            <h3 class="skill-title">数据驱动与实验</h3>
-            <p class="skill-desc">
-              自己写 SQL、自己设计实验。搭过埋点体系，也踩过样本量不足的坑；
-              相信没有度量的上线只是发布，有度量的上线才是产品决策。
-            </p>
-            <ul class="skill-tags" aria-label="相关技能">
-              <li>SQL</li><li>A/B 实验</li><li>埋点体系</li><li>增长模型</li>
-            </ul>
-          </div>
-
-          <div class="skill reveal">
-            <h3 class="skill-title">体验与原型</h3>
-            <p class="skill-desc">
-              用高保真原型代替长篇 PRD 与团队沟通。
-              关注信息密度、空状态和错误路径——产品的体面往往藏在这些地方。
-            </p>
-            <ul class="skill-tags" aria-label="相关技能">
-              <li>Figma</li><li>交互设计</li><li>可用性测试</li><li>设计系统</li>
-            </ul>
-          </div>
-
-          <div class="skill reveal">
-            <h3 class="skill-title">交付与协作</h3>
-            <p class="skill-desc">
-              在大厂和创业公司都带过跨职能团队。
-              我的信条是：需求文档的最后一页永远是「我们如何知道它成功了」。
-            </p>
-            <ul class="skill-tags" aria-label="相关技能">
-              <li>敏捷开发</li><li>跨部门协作</li><li>Stakeholder 管理</li><li>风险控制</li>
-            </ul>
-          </div>
-        </div>
-
-        <p class="skills-tools reveal">
-          <span class="skills-tools-label">日常工具箱</span>
-          Figma · Axure · SQL · Tableau · Jira · Confluence · Notion · Python（数据分析）
-        </p>
-      </div>
-    </section>
-
-    <!-- ===================== 关于我 ===================== -->
-    <!-- 编辑提示：替换为你的真实经历，facts 列表同步更新 -->
-    <section class="section" id="about">
-      <div class="container about-grid">
-        <header class="section-head section-head--left reveal">
-          <p class="section-index">03</p>
-          <h2 class="section-title">关于我</h2>
-        </header>
-
-        <div class="about-body">
-          <p class="about-lead reveal">
-            我是 Alan，一名把「让复杂变简单」当作职业信条的产品经理。
-          </p>
-          <p class="about-text reveal">
-            过去八年，我从一家电商创业公司的第一位产品经理做起，
-            经历了从 0 到 1 的混乱与兴奋，也在大平台里学会了在约束中做取舍。
-            我做过数据产品、AI 应用和内部工具——它们看起来领域不同，
-            底层却是同一件事：找到真实的问题，然后用最少的版本把它交付出来。
-          </p>
-          <p class="about-text reveal">
-            工作之外，我在整理一份「产品经理提问清单」，也在学怎么把飞盘玩得更稳。
-            如果你恰好在做有意思的产品，欢迎找我聊聊——
-            哪怕只是交换一个观点。
-          </p>
-
-          <ul class="about-facts reveal" aria-label="关键信息">
-            <li><strong>8 年+</strong><span>产品经验</span></li>
-            <li><strong>3 段</strong><span>大厂与创业公司经历</span></li>
-            <li><strong>20+</strong><span>从 0 到 1 上线项目</span></li>
-            <li><strong>上海</strong><span>开放远程协作</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== 联系方式 ===================== -->
-    <!-- 编辑提示：替换邮箱与各社交链接（含微信二维码图片可自行添加） -->
-    <section class="section section--contact" id="contact">
-      <div class="container">
-        <header class="section-head section-head--center reveal">
-          <p class="section-index">04</p>
-          <h2 class="section-title">联系我</h2>
-          <p class="section-note">
-            正在看新的产品机会与合作可能。如果你在做值得投入的事，
-            一封邮件的代价，可能换来一个靠谱的产品合伙人。
-          </p>
-        </header>
-
-        <div class="contact-panel reveal">
-          <a class="contact-email" href="mailto:hello.alan@example.com">hello.alan@example.com</a>
-          <p class="contact-hint">邮件通常会在 24 小时内回复</p>
-
-          <ul class="contact-links" aria-label="其他联系方式">
-            <li>
-              <a href="https://github.com/Alan-0123" target="_blank" rel="noopener">
-                <span class="contact-links-label">GitHub</span>
-                <span class="contact-links-value">github.com/Alan-0123</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-                <span class="contact-links-label">LinkedIn</span>
-                <span class="contact-links-value">in/alan-pm</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <span class="contact-links-label">微信</span>
-                <span class="contact-links-value">alan-pm-2026</span>
-              </a>
-            </li>
-          </ul>
+          <form class="contact-form reveal" action="#" method="post">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="f-name">你的名字</label>
+                <input id="f-name" name="name" type="text" placeholder="怎么称呼你？" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="f-email">邮箱</label>
+                <input id="f-email" name="email" type="email" placeholder="用于回复你" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="f-msg">留言内容</label>
+              <textarea id="f-msg" name="message" rows="5" placeholder="想聊点什么？" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">发送留言<span aria-hidden="true">→</span></button>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ===================== 页脚 ===================== -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Alan · 由 GitHub Pages 驱动</p>
-      <p class="footer-note">设计于上海 · 排版使用 Fraunces 与系统字体</p>
+    <div class="container">
+      <p class="footer-wordmark" aria-hidden="true">林远</p>
+      <p>© <span id="year">2026</span> 林远 · 用 HTML &amp; CSS 手工打造 · <a href="#top">回到顶部 ↑</a></p>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    // 滚动显现
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+    // 技能条动画
+    const skillIO = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.dataset.level + '%';
+          skillIO.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('.skill-fill').forEach((el) => skillIO.observe(el));
+
+    // 吸顶导航阴影
+    const header = document.querySelector('.site-header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // 移动端菜单
+    const navToggle = document.querySelector('.nav-toggle');
+    const siteMenu = document.getElementById('site-menu');
+    const closeMenu = () => {
+      siteMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', '打开菜单');
+    };
+    navToggle.addEventListener('click', () => {
+      const open = siteMenu.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(open));
+      navToggle.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
+    });
+    siteMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && siteMenu.classList.contains('open')) {
+        closeMenu();
+        navToggle.focus();
+      }
+    });
+
+    // 年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
