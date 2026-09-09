@@ -1,0 +1,75 @@
+{
+  "data": [
+    {
+      "id": "page-index",
+      "title": "林远 · 个人简历",
+      "type": "page",
+      "version": 1,
+      "createdAt": 1788776094000,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "group": 0,
+        "layoutSnapshot": {
+          "version": 1,
+          "contentHeight": 4333,
+          "viewportWidth": 1440,
+          "sourceHash": "fnv1a-75c4f640",
+          "measuredAt": 1788778887227
+        }
+      },
+      "devMetadata": {
+        "htmlSrc": "pages/index.html",
+        "interactions": []
+      }
+    },
+    {
+      "id": "image-001",
+      "title": "易维项目预览图",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788776094000,
+      "canvasData": {
+        "x": 0,
+        "y": 1371,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/images/project-yiwei.jpg"
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "药记录项目预览图",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788776094000,
+      "canvasData": {
+        "x": 480,
+        "y": 1371,
+        "naturalSize": {
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/images/project-yaojilu-updated.jpg"
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "desktop",
+    "designLibrary": {
+      "name": "Minimalist",
+      "id": "dl_builtin_minimalist",
+      "version": "0",
+      "scope": "built-in-global",
+      "path": "c:\\Users\\Micro\\.trae-cn\\design_libraries\\Minimalist",
+      "versionSource": "metadata.json"
+    }
+  }
+}

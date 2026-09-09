@@ -1,313 +1,1701 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>林远 · 个人简历</title>
-  <meta name="description" content="林远的个人简历网站 — 全栈工程师 / 独立开发者">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23201A12'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23F7F2E9' font-family='serif'%3E%E6%9E%97%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
-  <div class="grain" aria-hidden="true"></div>
+<html lang="zh-CN" data-page-node-id="tycv8HhpxgDObTpvSqYpho" data-dm-ref="1">
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="logo" href="#top">
-        <span class="logo-mark" aria-hidden="true">林</span>
-        <span class="logo-text">林远<em>/</em>LIN&nbsp;YUAN</span>
+<head data-page-node-id="FYYTbD3o9GSXDB0TtutFev">
+  <meta charset="UTF-8" data-page-node-id="ETgPKBC2sE7EiGTXWXYEKB">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="j76mYtkUUviWla5PUCAtoO">
+  <title data-page-node-id="HoZ1zJ2Q6TG2gnHzA8DjBP" data-pnid-children="YXOHAqnqgmujdKvM1FuqJc"
+    style="box-sizing:border-box;animation-duration:.01ms !important;transition-duration:.01ms !important;scroll-behavior:auto !important">
+    Alan · 开发工程师</title>
+  <title>Alan · 开发工程师</title>
+  <meta name="description" content="黑白灰极简风格个人简历 / 作品集网站模板，响应式布局，单文件零依赖。" data-page-node-id="obWiktuDawXrRFGWjSei2p">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0B0C'/%3E%3Ccircle cx='32' cy='32' r='13' fill='none' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E"
+    data-page-node-id="5eoQ0BWkqOpm4FCz0IeAQ2">
+  <style>
+    /* ============ 设计令牌：仅有黑白灰 ============ */
+    :root {
+      --bg: #FFFFFF;
+      --bg-2: #FFFFFF;
+      --surface: #FAFAFA;
+      --surface-2: #F4F4F5;
+      --line: #E4E4E7;
+      --line-2: #C7C7CD;
+      --text: #0B0B0C;
+      --text-2: #55555C;
+      --text-3: #8C8C94;
+      /* 浅灰底区块（黑字，卡片 hover 转深底白字） */
+      --inv-bg: #F4F4F5;
+      --inv-text: #0B0B0C;
+      --inv-line: #DEDEE1;
+      --inv-muted: #6E6E76;
+      /* 纯黑纯白：用于按钮与反色 */
+      --solid: #0B0B0C;
+      --solid-text: #FFFFFF;
+
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      --font-serif: "Playfair Display", "Times New Roman", Georgia, "Songti SC", "SimSun", serif;
+      --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas, "Courier New", monospace;
+
+      --pad: clamp(20px, 5vw, 64px);
+      --max: 1240px;
+      --radius: 2px;
+      --ease: cubic-bezier(.22, .61, .36, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.75;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    ul,
+    ol,
+    dl {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ::selection {
+      background: #0B0B0C;
+      color: #fff;
+    }
+
+    /* ============ 通用 ============ */
+    .container {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 200;
+      background: #fff;
+      color: #000;
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    /* 顶部滚动进度 */
+    .scroll-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 2px;
+      background: var(--solid);
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      z-index: 120;
+      will-change: transform;
+    }
+
+    /* ============ 头部 ============ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      border-bottom: 1px solid transparent;
+      transition: background .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s;
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, .88);
+      backdrop-filter: blur(14px) saturate(120%);
+      -webkit-backdrop-filter: blur(14px) saturate(120%);
+      border-bottom-color: var(--line);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      height: 76px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    .logo-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line-2);
+      border-radius: 50%;
+      font-family: var(--font-serif);
+      font-size: 15px;
+      transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+    }
+
+    .logo:hover .logo-mark {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .logo-text {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    .logo-text em {
+      font-style: normal;
+      color: var(--text-3);
+    }
+
+    .logo-text .en {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .site-nav a {
+      position: relative;
+      font-size: 14px;
+      color: var(--text-2);
+      transition: color .25s;
+    }
+
+    .site-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: transform .35s var(--ease);
+    }
+
+    .site-nav a:hover {
+      color: var(--text);
+    }
+
+    .site-nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .site-nav .nav-cta {
+      padding: 9px 18px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .site-nav .nav-cta::after {
+      display: none;
+    }
+
+    .site-nav .nav-cta-solid {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .site-nav .nav-cta-solid:hover {
+      background: transparent;
+      color: var(--solid);
+    }
+
+    .site-nav .nav-cta:hover {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line-2);
+      border-radius: var(--radius);
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      place-items: center;
+      gap: 5px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 18px;
+      height: 1.5px;
+      background: var(--text);
+      margin: 4px auto;
+      transition: transform .3s var(--ease), opacity .2s;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg);
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg);
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      position: relative;
+      padding: calc(76px + clamp(48px, 9vh, 110px)) 0 clamp(56px, 8vh, 96px);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(to right, var(--line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+      background-size: 88px 88px;
+      opacity: .85;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 20%, transparent 78%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 20%, transparent 78%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      align-items: start;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 22px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--line-2);
+    }
+
+    .hero-title {
+      font-size: clamp(44px, 8.2vw, 108px);
+      font-weight: 500;
+      line-height: .98;
+      letter-spacing: -0.035em;
+      margin-bottom: 6px;
+    }
+
+    .hero-title .thin {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--text-2);
+    }
+
+    .hero-role {
+      font-family: var(--font-mono);
+      font-size: clamp(12px, 1.4vw, 15px);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin: 18px 0 26px;
+    }
+
+    .hero-desc {
+      max-width: 80ch;
+      color: var(--text-2);
+      font-size: clamp(15px, 1.4vw, 17px);
+      line-height: 1.9;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 34px 0 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      background: transparent;
+      color: var(--text);
+      transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease);
+    }
+
+    .btn span {
+      transition: transform .3s var(--ease);
+    }
+
+    .btn-primary {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: transparent;
+      color: var(--solid);
+    }
+
+    .btn-primary:hover span {
+      transform: translateY(3px);
+    }
+
+    .btn-ghost:hover {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .btn-ghost:hover span {
+      transform: translateX(4px);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: clamp(24px, 4vw, 54px);
+      margin: 46px 0 0;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .hero-stats dt {
+      font-family: var(--font-serif);
+      font-size: clamp(30px, 3.6vw, 44px);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-stats dt sup {
+      font-size: .42em;
+      vertical-align: super;
+      color: var(--text-3);
+    }
+
+    .hero-stats dd {
+      margin: 8px 0 0;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+
+    .hero-rule {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: clamp(44px, 6vw, 78px);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: .3em;
+      color: var(--text-3);
+    }
+
+    .hero-rule::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--line-2), transparent);
+    }
+
+    /* ============ 区块 ============ */
+    .section {
+      padding: clamp(72px, 11vh, 132px) 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: clamp(16px, 3vw, 40px);
+      margin-bottom: clamp(36px, 5vw, 60px);
+      flex-wrap: wrap;
+    }
+
+    .section-no {
+      font-family: var(--font-mono);
+      font-size: clamp(11px, 1.2vw, 13px);
+      letter-spacing: .2em;
+      color: var(--text-3);
+      padding-top: .6em;
+      min-width: 42px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 4.6vw, 56px);
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .title-en {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      font-weight: 400;
+    }
+
+    .section-note {
+      max-width: 60ch;
+      color: var(--text-2);
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
+
+    /* ============ 关于 ============ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+      gap: clamp(32px, 5vw, 76px);
+    }
+
+    .about-text p {
+      color: var(--text-2);
+      font-size: clamp(15px, 1.35vw, 17px);
+      line-height: 1.95;
+      margin-bottom: 20px;
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-facts {
+      border-top: 1px solid var(--line);
+    }
+
+    .about-facts>div {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-facts dt {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding-top: 4px;
+    }
+
+    .about-facts dd {
+      margin: 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .about-facts a:hover {
+      border-bottom: 1px solid var(--text);
+    }
+
+    /* ============ 技能 ============ */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+      gap: clamp(32px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .skill-bar {
+      margin-bottom: 30px;
+    }
+
+    .skill-bar:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-bar-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .skill-bar-head span:last-child {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-3);
+      letter-spacing: .08em;
+    }
+
+    .skill-track {
+      height: 2px;
+      background: var(--line);
+      overflow: hidden;
+    }
+
+    .skill-fill {
+      width: 0;
+      height: 100%;
+      background: var(--solid);
+      transition: width 1.3s var(--ease);
+    }
+
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-content: flex-start;
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--text-2);
+      transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+    }
+
+    .chip:hover {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .chips-note {
+      width: 100%;
+      margin-top: 18px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: .06em;
+      color: var(--text-3);
+    }
+
+    /* ============ 经历时间线 ============ */
+    .timeline {
+      position: relative;
+      padding-left: 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: clamp(20px, 4vw, 48px);
+      padding: 0 0 44px 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: 190px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: var(--line);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      left: 190px;
+      top: 9px;
+      width: 7px;
+      height: 7px;
+      background: var(--bg);
+      border: 1px solid var(--text-3);
+      transform: translateX(-50%) rotate(45deg);
+      transition: background .3s var(--ease), border-color .3s var(--ease);
+    }
+
+    .timeline-item:hover::after {
+      background: var(--solid);
+      border-color: var(--solid);
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-item:last-child::before {
+      bottom: auto;
+      height: 9px;
+    }
+
+    .timeline-when {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: .1em;
+      color: var(--text-3);
+      padding-top: 3px;
+      padding-right: 20px;
+    }
+
+    .timeline-body {
+      padding-left: clamp(20px, 3vw, 40px);
+    }
+
+    .timeline-body h3 {
+      font-size: clamp(18px, 2vw, 22px);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .timeline-org {
+      display: inline-block;
+      font-size: 13px;
+      color: var(--text-3);
+      font-weight: 400;
+      letter-spacing: .02em;
+    }
+
+    .timeline-body p {
+      color: var(--text-2);
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    .education {
+      display: flex;
+      align-items: baseline;
+      gap: clamp(16px, 3vw, 40px);
+      margin-top: 20px;
+      padding-top: 32px;
+      border-top: 1px dashed var(--line-2);
+    }
+
+    .education h3 {
+      font-size: clamp(17px, 1.8vw, 20px);
+      margin-bottom: 6px;
+    }
+
+    .education p {
+      color: var(--text-3);
+      font-size: 14px;
+    }
+
+    /* ============ 项目（反色浅底） ============ */
+    .section-invert {
+      background: var(--inv-bg);
+      color: var(--inv-text);
+      border-top-color: var(--inv-bg);
+    }
+
+    .section-invert .section-no,
+    .section-invert .title-en,
+    .section-invert .section-note {
+      color: var(--inv-muted);
+    }
+
+    .section-invert .section-note {
+      color: #55555C;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--inv-line);
+      border: 1px solid var(--inv-line);
+    }
+
+    .project {
+      background: var(--inv-bg);
+      padding: 26px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: background .35s var(--ease), color .35s var(--ease), box-shadow .35s var(--ease);
+    }
+
+    .project:hover {
+      background: #E9E9EC;
+      color: var(--solid);
+      box-shadow: inset 0 3px 0 var(--solid);
+    }
+
+    .project-media {
+      aspect-ratio: 16 / 10;
+      background: #fff;
+      border: 1px solid var(--inv-line);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      transition: border-color .35s var(--ease);
+    }
+
+    .project:hover .project-media {
+      border-color: #B9B9C1;
+    }
+
+    .project-media svg {
+      width: 100%;
+      height: 100%;
+      transition: transform .55s var(--ease);
+    }
+
+    .project:hover .project-media svg {
+      transform: scale(1.04);
+    }
+
+    .project-index {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--inv-muted);
+      transition: color .35s var(--ease);
+    }
+
+    .project:hover .project-index {
+      color: var(--text-2);
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #4A4A4C;
+      transition: color .35s var(--ease);
+    }
+
+    .project:hover .project-desc {
+      color: #3E3E44;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .project-tags li {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: .06em;
+      padding: 4px 9px;
+      border: 1px solid var(--inv-line);
+      border-radius: 999px;
+      color: #4A4A4C;
+      transition: border-color .35s var(--ease), color .35s var(--ease);
+    }
+
+    .project:hover .project-tags li {
+      border-color: #B9B9C1;
+      color: #3E3E44;
+    }
+
+    .project-meta {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--inv-line);
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: .1em;
+      color: var(--inv-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: border-color .35s var(--ease), color .35s var(--ease);
+    }
+
+    .project:hover .project-meta {
+      border-color: #B9B9C1;
+      color: var(--text-2);
+    }
+
+    .project-meta .arrow {
+      transition: transform .35s var(--ease);
+    }
+
+    .project:hover .project-meta .arrow {
+      transform: translateX(5px);
+    }
+
+    /* ============ 联系 ============ */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: clamp(32px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .contact-info p {
+      color: var(--text-2);
+      font-size: 16px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+    }
+
+    .contact-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-list li {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 15px;
+    }
+
+    .contact-list span {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding-top: 4px;
+    }
+
+    .contact-list a:hover {
+      border-bottom: 1px solid var(--text);
+    }
+
+    .contact-cta {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #FFFFFF, var(--surface-2));
+      padding: clamp(26px, 3.4vw, 44px);
+      border-radius: var(--radius);
+    }
+
+    .contact-cta h3 {
+      font-size: clamp(22px, 2.6vw, 32px);
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .contact-cta>p {
+      color: var(--text-2);
+      font-size: 15px;
+      margin-bottom: 26px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* ============ 页脚 ============ */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 0;
+      background: var(--bg);
+    }
+
+    .site-footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .1em;
+      color: var(--text-3);
+      text-transform: uppercase;
+    }
+
+    .site-footer a:hover {
+      color: var(--text);
+    }
+
+    /* ============ 入场动画 ============ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ============ 响应式 ============ */
+    @media (max-width: 1080px) {
+      .site-nav {
+        gap: 22px;
+      }
+
+      .project-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid,
+      .skills-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .site-nav {
+        position: fixed;
+        inset: 76px 0 auto 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(255, 255, 255, .97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
+        padding: 8px var(--pad) 20px;
+        transform: translateY(-12px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
+        max-height: calc(100vh - 76px);
+        overflow-y: auto;
+      }
+
+      .site-nav.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+      }
+
+      .site-nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 15px;
+        color: var(--text);
+      }
+
+      .site-nav a::after {
+        display: none;
+      }
+
+      .site-nav .nav-cta {
+        margin-top: 18px;
+        text-align: center;
+        border: 1px solid var(--line-2);
+        border-radius: 999px;
+        padding: 14px;
+      }
+
+      .site-nav .nav-cta+.nav-cta {
+        margin-top: 10px;
+      }
+
+      .nav-toggle {
+        display: grid;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-bottom: 36px;
+        padding-left: 22px;
+      }
+
+      .timeline-item::before,
+      .timeline-item::after {
+        left: 0;
+      }
+
+      .timeline-item::after {
+        transform: translateX(0) rotate(45deg);
+      }
+
+      .timeline-when {
+        padding: 0;
+      }
+
+      .timeline-body {
+        padding-left: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 15px;
+      }
+
+      .header-inner {
+        height: 64px;
+      }
+
+      .site-nav {
+        inset: 64px 0 auto 0;
+        max-height: calc(100vh - 64px);
+      }
+
+      .hero {
+        padding-top: calc(64px + 44px);
+      }
+
+      .hero-stats {
+        gap: 22px 30px;
+      }
+
+      .hero-stats>div {
+        min-width: 84px;
+      }
+
+      .project-list {
+        grid-template-columns: 1fr;
+      }
+
+      .about-facts>div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 13px 0;
+      }
+
+      .contact-list li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .education {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media print {
+
+      .site-header,
+      .nav-toggle,
+      .hero-rule,
+      .scroll-progress {
+        display: none;
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+      }
+    }
+  </style>
+  <style id="__dm_no_drag_style__">
+    * {
+      -webkit-user-drag: none !important;
+    }
+  </style>
+  <style id="__dm_bindable_badge_style__">
+    [data-sp-bindable="database"] {
+      outline: 1px dashed #0088ff;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    [data-sp-bindable="database"] * {
+      pointer-events: none !important;
+      transition: none !important;
+      animation: none !important;
+    }
+
+    [data-sp-bindable="database"] {
+      transition: none !important;
+      animation: none !important;
+    }
+  </style>
+</head>
+
+<body data-page-node-id="ZVCXcXFTOAxZh5QOJNqO7D">
+  <a class="skip-link" href="#main" data-page-node-id="LoyYlWNteF3GeNtTJtdmPe">跳到主要内容</a>
+  <div class="scroll-progress" id="progress" aria-hidden="true" data-page-node-id="3ph9rQRi7v8CA6O4OijDnh"
+    style="transform: scaleX(1);"></div>
+
+  <header class="site-header scrolled" id="top" data-page-node-id="QdINctVqP16UnnKgyKcDFc">
+    <div class="container header-inner" data-page-node-id="2RNGDQCdvBcoSWfOA0BfSb">
+      <a class="logo" href="#top" data-page-node-id="dR1RgJfOlEQuZLy4wslRF6">
+        <span class="logo-mark" aria-hidden="true" data-page-node-id="8NyWiuYvmVygOuGwfvKYGk">简</span>
+        <span class="logo-text" data-page-node-id="jkRLlKHfR3IsBblFD6B6iC">Alan<em
+            data-page-node-id="Z8gDB0CKHoEzzSCHGdpVXD">/</em><span class="en"
+            data-page-node-id="AvudwRVvHun3LX73PTYtX8">alan</span></span>
       </a>
-      <nav class="site-nav" id="site-menu" aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#skills">技能</a>
-        <a href="#experience">经历</a>
-        <a href="#works">作品</a>
-        <a href="resume.html">个人简历</a>
-        <a href="#contact" class="nav-cta">联系我</a>
+      <nav class="site-nav" id="site-menu" aria-label="主导航" data-page-node-id="ECHtZCkgbdWuOmayJ393m5">
+        <a href="index.html" data-page-node-id="QxgSVA2qiR6aXi6Q7Q0GXB">首页</a>
+        <a href="#skills" data-page-node-id="W7vhFYUBJS2nhKaevWtMcb">技能</a>
+        <a href="#experience" data-page-node-id="pXvJ6LCNBGFq8vUgxNnhEv">经历</a>
+        <a href="#projects" data-page-node-id="XLYGXaMxiF38KrSohWLqhk">作品</a>
+        <a href="resume.html" data-page-node-id="navResumeLink01">简历</a>
       </nav>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="打开菜单">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="打开菜单"
+        data-page-node-id="cignLXYzLFLu10EURXKgxB">
+        <span data-page-node-id="HArYRX8lS4y2Q3cm3vTWik"></span><span
+          data-page-node-id="0rFjl0BJIEl89nkJe5UFYp"></span><span data-page-node-id="QZMtAQvxC915q0CPMA6tbk"></span>
       </button>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="hero-kicker reveal">个人简历 · RESUME · 2026</p>
-          <h1 class="hero-title reveal" id="hero-title">
-            你好，我是 <em>林远</em>
-            <span class="hero-name-en">LIN&nbsp;YUAN</span>
-          </h1>
-          <p class="hero-sub reveal">全栈工程师 · 独立开发者</p>
-          <p class="hero-desc reveal">
-            8 年互联网从业经验，专注用代码解决真实问题。做过面向百万用户的产品，
-            也独立打造过从 0 到 1 的小工具。相信简洁的代码和克制的设计。
-          </p>
-          <div class="hero-actions reveal">
-            <a href="#works" class="btn btn-primary">查看作品<span aria-hidden="true">→</span></a>
-            <a href="#contact" class="btn btn-ghost">联系我</a>
-          </div>
-          <dl class="hero-stats reveal">
-            <div><dt>8<sup>+</sup></dt><dd>年经验</dd></div>
-            <div><dt>30<sup>+</sup></dt><dd>交付项目</dd></div>
-            <div><dt>12</dt><dd>奖项荣誉</dd></div>
-          </dl>
-        </div>
-        <aside class="hero-side reveal" aria-label="头像与签名">
-          <div class="portrait-card">
-            <div class="portrait" role="img" aria-label="林远的头像占位图">
-              <svg viewBox="0 0 200 200" aria-hidden="true">
-                <defs>
-                  <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#C04A1D"/>
-                    <stop offset="1" stop-color="#8E3310"/>
-                  </linearGradient>
-                </defs>
-                <circle cx="100" cy="100" r="100" fill="url(#pg)"/>
-                <circle cx="100" cy="86" r="30" fill="#F7F2E9" opacity="0.92"/>
-                <path d="M40 200c4-42 30-62 60-62s56 20 60 62Z" fill="#F7F2E9" opacity="0.92"/>
-                <text x="100" y="112" text-anchor="middle" font-family="serif" font-size="46" fill="#201A12" opacity="0.85">林</text>
-              </svg>
-            </div>
-            <div class="portrait-meta">
-              <strong>林远</strong>
-              <span>全栈工程师 · 现居上海</span>
-            </div>
-            <div class="stamp" aria-hidden="true">设计 · 开发<br>EST. 2016</div>
-          </div>
-        </aside>
-      </div>
-      <div class="container hero-rule" aria-hidden="true"><span>SCROLL</span></div>
-    </section>
+  <main id="main" data-page-node-id="2gU8RY1EMK3MPq45XUlPQk" style="box-sizing: border-box; padding-top: 64px;">
 
-    <!-- ABOUT -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">01</span>
-          <h2 id="about-title">关于我<span class="title-en">About</span></h2>
+    <!-- ========== HERO ========== -->
+
+
+    <!-- ========== 01 关于 ========== -->
+    <section class="section" id="about" aria-labelledby="about-title" data-page-node-id="WTVHLplTOqKDErygihhQ55">
+      <div class="container" data-page-node-id="qKV9XobYswvDC4eCfZqBoO">
+        <header class="section-head reveal in" data-page-node-id="XEH6RFIZScFiCYyxzImECA">
+          <span class="section-no" data-page-node-id="HvpomrgRbOmVJ4ZuGaaY8v">01</span>
+          <h2 id="about-title" data-page-node-id="qkrSpJ0X5VrhpyqOqBgwpH">基本信息<span class="title-en"
+              data-page-node-id="kmqVkqa4FJyFztQveOccjY">Profile</span></h2>
         </header>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              我是林远，一名全栈工程师。2016 年从计算机科学专业毕业后进入互联网行业，
-              先后在电商与 SaaS 领域工作，主导过支付网关重构、低代码平台搭建等核心项目。
-            </p>
-            <p>
-              工作之余喜欢做独立产品：写过效率小工具、开源过组件库，也维护着一个
-              技术博客。对工程美学有一点执念——好代码和好设计一样，都应该克制而精确。
-            </p>
+        <div class="about-grid" data-page-node-id="XS4L9ynoysBNfdUxqkMtH0">
+
+          <div class="about-text reveal in" data-page-node-id="7uOSfgBnbHFXjZBGT59z6n">
+            <p data-page-node-id="Dw8vCCtFMKNSFxjlmQRxQA" style="white-space: pre-wrap;">
+              专注于Web应用与小程序开发，习惯把一个想法拆成可交付的模块：需求梳理 → 原型确认 → 接口与数据库设计 → 编码实现 → 部署上线 → 维护迭代。</p>
+            <p data-page-node-id="n5kWP75vQhB3khGG79sRG1">偏好干净、克制的实现方式：不堆砌框架，不写一次性代码，保证接手的人能看懂、能改、能跑起来。
+              交付内容包括完整源码、部署文档与必要的操作说明。</p>
           </div>
-          <dl class="about-facts reveal">
-            <div><dt>所在地</dt><dd>上海 · 可远程</dd></div>
-            <div><dt>邮箱</dt><dd><a href="mailto:hello@linyuan.dev">hello@linyuan.dev</a></dd></div>
-            <div><dt>状态</dt><dd><span class="dot" aria-hidden="true"></span>开放机会中</dd></div>
-            <div><dt>语言</dt><dd>中文 · English</dd></div>
+          <dl class="about-facts reveal in" data-page-node-id="0txsKsHDEcsU1ByxVWZY5u">
+            <div data-page-node-id="EukFoasicL4GqWyCyRrIn1">
+              <dt data-page-node-id="oyz7xDaviqYJLUmwCAyH5v">求职意向</dt>
+              <dd data-page-node-id="wWlEJtaxGGVFr6bv9Jahdz">Java 开发 / 全栈开发 / 软件外包</dd>
+            </div>
+            <div data-page-node-id="t4IxgGHg3xdQlfh1vaESI1">
+              <dt data-page-node-id="DHI4S9O4AZYK9L4EtlVOQc">所在城市</dt>
+              <dd data-page-node-id="KqeDkJ0VdNJRqBOMtZB6u8">河南 · 支持远程</dd>
+            </div>
+            <div data-page-node-id="HPhRCRGlteREIp5SQNpG5l">
+              <dt data-page-node-id="ob3ljnE1Fh86XFI2tL2JbP">学历</dt>
+              <dd data-page-node-id="SkPcMAymb9Nr0Sg9RFNN3s">本科 · 计算机科学与技术</dd>
+            </div>
+            <div data-page-node-id="T7B2N8QiyAu5nodYTJVh8u">
+              <dt data-page-node-id="nP5aQsziqkSssmvNVBQnLD">可到岗</dt>
+              <dd data-page-node-id="9AALuZdNIT8B4xhjEAg5FO">随时 · 全职 / 兼职均可</dd>
+            </div>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section section-tint" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">02</span>
-          <h2 id="skills-title">专业技能<span class="title-en">Skills</span></h2>
+    <!-- ========== 02 技能 ========== -->
+    <section class="section section-invert" id="skills" aria-labelledby="skills-title"
+      data-page-node-id="WtDKxcwqPsNxXgDG3fOuqF">
+      <div class="container" data-page-node-id="IuCdVjHmYAg0p4r9JJFDnY">
+        <header class="section-head reveal in" data-page-node-id="J27ixsECN8CFkrSaabp3lg">
+          <span class="section-no" data-page-node-id="lC88s62XVLpkeLbaMsvWWf">02</span>
+          <h2 id="skills-title" data-page-node-id="LMENmpS3Rdrwffxvgoo6LW">专业技能<span class="title-en"
+              data-page-node-id="AYsBVJRNhgRxb5xcnyWAva">Skills</span></h2>
         </header>
-        <div class="skills-grid">
-          <div class="skill-group reveal">
-            <div class="skill-bar">
-              <div class="skill-bar-head"><span>前端开发</span><span>90%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-level="90"></div></div>
+        <div class="skills-grid" data-page-node-id="QpcnaCuUmCM2ChjXOJ0bRt">
+          <div class="reveal in" data-page-node-id="SF77zvP5IFnswxRRfFVMi5">
+            <div class="skill-bar" data-page-node-id="oqIop9XXSnnGyxOsDgXkDt">
+              <div class="skill-bar-head" data-page-node-id="i1RL6A2orzOsKB2ZrVdFLU"><span
+                  data-page-node-id="z1ops8vBAjf2dV556jIfhk">Java 后端开发</span><span
+                  data-page-node-id="IXVr3iKk4UDEDWEZKNpDTj">90%</span></div>
+              <div class="skill-track" data-page-node-id="3lW9ixW9SBI4iW0Q51PBWJ">
+                <div class="skill-fill" data-level="90" data-page-node-id="29rexKr3IeBxAaUUoMTf8K" style="width: 90%;">
+                </div>
+              </div>
             </div>
-            <div class="skill-bar">
-              <div class="skill-bar-head"><span>后端 &amp; 架构</span><span>85%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-level="85"></div></div>
+            <div class="skill-bar" data-page-node-id="Y1yl9PNFexmcovTvsPbsx1">
+              <div class="skill-bar-head" data-page-node-id="S8oGDoz5drU2N3alFYOf1X"><span
+                  data-page-node-id="4L7nIWCKFo8id5Lx9ce8XR">Spring Boot &amp; MyBatis</span><span
+                  data-page-node-id="DO7CqMpUXH0vJMaxqnAESe">85%</span></div>
+              <div class="skill-track" data-page-node-id="7T7IUjZ5DZZhpOgjFbJMCf">
+                <div class="skill-fill" data-level="85" data-page-node-id="GfGcBZdoRGJhup86EiiAPP" style="width: 85%;">
+                </div>
+              </div>
             </div>
-            <div class="skill-bar">
-              <div class="skill-bar-head"><span>数据 &amp; 算法</span><span>70%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-level="70"></div></div>
+            <div class="skill-bar" data-page-node-id="YjzZWZY4jOIl9lhVdvjV7b">
+              <div class="skill-bar-head" data-page-node-id="2BRIUHHfblQlXwukaqTICE"><span
+                  data-page-node-id="YzRGPQ9hibm5Kgs72Mc9q4">Python / 自动化脚本</span><span
+                  data-page-node-id="RFYVnOFMqq6NvdNkODGZQl">80%</span></div>
+              <div class="skill-track" data-page-node-id="1dlxb6rKQoeEnk0eMYOtUI">
+                <div class="skill-fill" data-level="80" data-page-node-id="4yF6XJmo0Azcf2jyM1UCmE" style="width: 80%;">
+                </div>
+              </div>
             </div>
-            <div class="skill-bar">
-              <div class="skill-bar-head"><span>UI / UX 设计</span><span>75%</span></div>
-              <div class="skill-track"><div class="skill-fill" data-level="75"></div></div>
+            <div class="skill-bar" data-page-node-id="84REQvgzuAaPTJlv95dGnG">
+              <div class="skill-bar-head" data-page-node-id="VEtEq8TBDXf5sxnDLSMGmX"><span
+                  data-page-node-id="zdtr1TQJqKSeP3GKNdRtyE">前端 &amp; 小程序（Vue / uni-app）</span><span
+                  data-page-node-id="vksLlEyBrtPMOiC7meHzyy">75%</span></div>
+              <div class="skill-track" data-page-node-id="VsilmuJhwV3PNsEA3a4E8X">
+                <div class="skill-fill" data-level="75" data-page-node-id="TqSWJXtveQ8uCqxvtoXaTE" style="width: 75%;">
+                </div>
+              </div>
+            </div>
+            <div class="skill-bar" data-page-node-id="asezXZFl1Qdnyh4ZF30JVn">
+              <div class="skill-bar-head" data-page-node-id="99ILXoYwIz37sT8D3opvrD"><span
+                  data-page-node-id="BzyxuXGDCPgxFIsEcSL1li">数据库 &amp; 部署运维</span><span
+                  data-page-node-id="Gutng6HsAD8mGhcEWWBW5Y">70%</span></div>
+              <div class="skill-track" data-page-node-id="mSDHAG17TmQYdHiIYDAkdl">
+                <div class="skill-fill" data-level="70" data-page-node-id="WVBL39TDbRgbzcHz8hDtGu" style="width: 70%;">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="skill-chips reveal">
-            <span class="chip">TypeScript</span><span class="chip">React</span>
-            <span class="chip">Vue</span><span class="chip">Node.js</span>
-            <span class="chip">Python</span><span class="chip">Go</span>
-            <span class="chip">PostgreSQL</span><span class="chip">Docker</span>
-            <span class="chip">Kubernetes</span><span class="chip">Figma</span>
-            <span class="chip">GraphQL</span><span class="chip">Rust</span>
-            <p class="chips-note">工具与语言会更新，解决问题的能力不会。</p>
+          <div class="skill-chips reveal in" data-page-node-id="CDeVlkLPmJUIyWSZuL6pnR">
+            <span class="chip" data-page-node-id="ai4harLFuMK3iCpJJAHOZp">Java</span><span class="chip"
+              data-page-node-id="YwlfSlmffFBIlSLR5exZgE">Spring Boot</span>
+            <span class="chip" data-page-node-id="nJ8FUTY79XogNTIfYC4hEE">MyBatis</span><span class="chip"
+              data-page-node-id="OuHQAjycI3Yd4U09J0QOyi">MySQL</span>
+            <span class="chip" data-page-node-id="IoBuGCoUNBbWy5MGoBFzeB">Redis</span><span class="chip"
+              data-page-node-id="MhSOxVaBYEwTsdlCEbo41m">Python</span>
+            <span class="chip" data-page-node-id="QvLoGbOVWkhGR4OpedsHmn">FastAPI</span><span class="chip"
+              data-page-node-id="l7NNTog2YByXOLLDTxiKga">Vue 3</span>
+            <span class="chip" data-page-node-id="DshxUCuTWBYyO2jPU7qTMw">uni-app</span><span class="chip"
+              data-page-node-id="AWRZKidOMrHz0UgciXfKhf">TypeScript</span>
+            <span class="chip" data-page-node-id="KkD1Blgv95JVON3i1sClsj">HTML / CSS</span><span class="chip"
+              data-page-node-id="D2DpnK0iFws6XBq3kaPyci">Docker</span>
+            <span class="chip" data-page-node-id="hRnjaFABfWyZLvWCWVG1UI">Nginx</span><span class="chip"
+              data-page-node-id="1PhLvcKDDTYkfYrZtQ0k6l">Linux</span>
+            <span class="chip" data-page-node-id="WfAkkotXCqlCm3hF3xITPD">Maven</span><span class="chip"
+              data-page-node-id="P8FomMgwH3lyu7bIMDFywC">Git</span>
+            <p class="chips-note" data-page-node-id="C2jRHGaXowfsazA1ehWgs8">工具会更新，解决问题的能力不会。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience" aria-labelledby="exp-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">03</span>
-          <h2 id="exp-title">工作经历<span class="title-en">Experience</span></h2>
+    <!-- ========== 03 经历 ========== -->
+    <section class="section" id="experience" aria-labelledby="exp-title" data-page-node-id="1BHq900tJdTMlUJBHVXE7d">
+      <div class="container" data-page-node-id="2WQVM457ONDpE3IU618GRZ">
+        <header class="section-head reveal in" data-page-node-id="fo8zM0EFRcxWkDh8Tgp7VL">
+          <span class="section-no" data-page-node-id="HguUi2klbAMToadyikjkxG">03</span>
+          <h2 id="exp-title" data-page-node-id="XLoE79pD6F0AHUnBaM76Ms">工作经历<span class="title-en"
+              data-page-node-id="8azH7HbL1656rlVnGAoda3">Experience</span></h2>
         </header>
-        <ol class="timeline">
-          <li class="timeline-item reveal">
-            <div class="timeline-when">2021 — 至今</div>
-            <div class="timeline-body">
-              <h3>高级全栈工程师 <span class="timeline-org">@ 云帆科技</span></h3>
-              <p>负责低代码平台核心引擎与运行时，服务 200+ 企业客户；带领 6 人小组完成多端渲染架构升级，页面性能提升 3 倍。</p>
+        <ol class="timeline" data-page-node-id="mTm2VPxyyfvbAM4qVL1Dqa">
+          <li class="timeline-item reveal in" data-page-node-id="0m0zOxQeqj3dQUt8UtXRBu">
+            <div class="timeline-when" data-page-node-id="Rf0Gq9QAL5yN2vxuIyPvUc">2024.03 — 至今</div>
+            <div class="timeline-body" data-page-node-id="zINXRp9NXoEAmqlkjLgRqU">
+              <h3 data-page-node-id="rd9rBsv06RU8WdkqSdrMHZ">独立开发者 / 自由职业 <span class="timeline-org"
+                  data-page-node-id="8qPxm45p57ZW3PZT3kEOJD">@ 远程协作</span></h3>
+              <p data-page-node-id="obxWp1jZ3Zq9N0chOZNhXr">
+                承接企业官网、微信小程序与内部管理系统的定制开发，独立完成需求沟通、方案设计、编码交付与上线部署，源码与部署文档一并交付。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">2018 — 2021</div>
-            <div class="timeline-body">
-              <h3>全栈工程师 <span class="timeline-org">@ 极客电商</span></h3>
-              <p>主导支付网关重构，支撑大促期间每秒 2 万笔订单；搭建内部监控告警体系，线上故障平均恢复时间下降 60%。</p>
+          <li class="timeline-item reveal in" data-page-node-id="WAUYodTNN0B8gfkUhgZ2nL">
+            <div class="timeline-when" data-page-node-id="1AEm5oOXZODFkztcCYB8fA">2021.12 — 2023.06</div>
+            <div class="timeline-body" data-page-node-id="ABuhQEJLpfjZUL6W7P5LT0">
+              <h3 data-page-node-id="qC550Ciu83eM8dRmLQTI0T">Java 开发工程师 <span class="timeline-org"
+                  data-page-node-id="1yYtRxH2nAtxNh8oeH0jiP">@ 软件科技有限公司</span></h3>
+              <p data-page-node-id="3aXqQKGDLC5NUml7vjPOOc">负责数字化营销获客系统采集信息模块的开发与维护，编写项目使用文档，协助系统代码实现与线上问题排查。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">2016 — 2018</div>
-            <div class="timeline-body">
-              <h3>初级前端工程师 <span class="timeline-org">@ 星河互娱</span></h3>
-              <p>从活动页开发起步，快速成长为项目组前端负责人；沉淀组件规范并在团队内推广。</p>
+          <li class="timeline-item reveal in" data-page-node-id="zIjDAMlVgaIe3FNDj8JV0A">
+            <div class="timeline-when" data-page-node-id="KIe9Ih84GNaW1TGO0G2yeC">2016.08 — 2018.03</div>
+            <div class="timeline-body" data-page-node-id="6XRSgA0wRonDP4dsjptwDG">
+              <h3 data-page-node-id="HOEPEofgtEZzwMzxrt3cTt">Java 开发工程师 <span class="timeline-org"
+                  data-page-node-id="QLTd44rfbNeZBCWEsO5nno">@ 互联网科技有限公司</span></h3>
+              <p data-page-node-id="xLTHL9eu8iFCF355S1HAwU">参与金融债券评估、信用档案、文件推送等企业级系统开发，负责需求分析、代码实现、测试与部署。</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal in" data-page-node-id="LQIknPN4zMkoGToljGfzkj">
+            <div class="timeline-when" data-page-node-id="IHHdqtbZCSL8gXqOEUUCjZ">2015.07 — 2016.08</div>
+            <div class="timeline-body" data-page-node-id="UWgt8T0htKo034wcDGMR9d">
+              <h3 data-page-node-id="VeTblHX6gCUA1BDxbZtNbl">Java 开发工程师 <span class="timeline-org"
+                  data-page-node-id="lVHwFSHKDHs4MMSHMLCWAo">@ 技术服务有限公司</span></h3>
+              <p data-page-node-id="d3UkfG9G1xMPW6QtJMhEsh">参与 ERP 典当业务与投资借贷平台的模块开发，承担代码实现、调试、测试与维护工作。</p>
             </div>
           </li>
         </ol>
-        <div class="education reveal">
-          <span class="section-no">03.1</span>
-          <div>
-            <h3>教育背景 <span class="timeline-org">2012 — 2016</span></h3>
-            <p>郑州航空工业管理学院 · 计算机科学与技术 · 学士学位。</p>
+        <div class="education reveal in" data-page-node-id="YawDD6PTMzfAh63blO5H7I">
+          <span class="section-no" data-page-node-id="f2M9CzDDLeMDscXUyCsJPt">03.1</span>
+          <div data-page-node-id="UJ0bRywIl419mDtUWAKbo2">
+            <h3 data-page-node-id="IUfgLxMKISSXWaN4h2Ka0v">教育背景 <span class="timeline-org"
+                data-page-node-id="jM0CoZ7VHYucihKCYSHPwa">计算机科学与技术</span></h3>
+            <p data-page-node-id="jqCeH9NJr37BrfG5BT119Y">本科 · 计算机科学与技术专业 · 主修程序设计、数据结构、数据库原理。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WORKS / 项目经验 -->
-    <section class="section section-tint" id="works" aria-labelledby="works-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">04</span>
-          <h2 id="works-title">代表作品<span class="title-en">Works</span></h2>
+    <!-- ========== 04 作品（反色浅底） ========== -->
+    <section class="section section-invert" id="projects" aria-labelledby="proj-title"
+      data-page-node-id="d4T8lEZv6SMRqSdj4hEIF6">
+      <div class="container" data-page-node-id="2b9cwbOpMmY34meVOiTT4w">
+        <header class="section-head reveal in" data-page-node-id="1uVmZIElb3AGXpS89SC8Hi">
+          <span class="section-no" data-page-node-id="MTNVZpLh7DGoDVXZ3QKGYk">04</span>
+          <h2 id="proj-title" data-page-node-id="QzeHRDeIEtwsM7qKhqYIDf">作品集<span class="title-en"
+              data-page-node-id="LfQWYvurC88RmZ9NjfD0r5">Projects</span></h2>
         </header>
-        <p class="section-note reveal">两个我从问题定义写到代码上线的作品——每个都讲清一个问题、一组取舍和一段结果。</p>
-        <div class="project-list">
+        <p class="section-note reveal in" data-page-node-id="YdCERFLGBWTPHdlLjqTG5z">以下为近年完成的主要项目，涵盖小程序、官网、后台系统与效率工具。
+        </p>
 
-          <!-- 项目一：易维 -->
-          <article class="project reveal">
-            <div class="project-media">
-              <img src="assets/images/project-yiwei.jpg"
-                   alt="易维多租户管理平台界面预览：暖白背景的管理后台，左侧导航、租户切换与数据表格用朱红色强调" loading="lazy" width="1280" height="720">
-            </div>
-            <div class="project-body">
-              <p class="project-index">01 / 企业级平台</p>
-              <h3 class="project-title">易维 · 企业级多租户管理平台</h3>
-              <p class="project-desc">
-                每个企业系统都在重复造轮子：登录鉴权、组织权限、租户隔离。
-                我把这些「不性感但绕不开」的部分沉淀成一套前后端一体的 SaaS 底座——
-                租户上下文随线程自动透传，数据权限在 SQL 层拼接过滤条件，
-                再配一个代码生成器，让台账、进销存这类业务模块能以天为单位长出来。
-                前端 Vue3 + TS + Vite 7，后端 Spring Boot 4，本地加分布式双层缓存。
-              </p>
-              <ul class="project-tags" aria-label="项目标签">
-                <li>多租户 SaaS</li>
-                <li>RBAC 权限</li>
-                <li>代码生成</li>
-                <li>前后端一体</li>
-              </ul>
-              <p class="project-meta">独立设计并开发 · 2026.03 – 08 持续迭代</p>
-            </div>
-          </article>
+        <div class="project-list" data-page-node-id="YNDWGQFwtSdFXWLh8dKdeR">
 
-          <!-- 项目二：药记录 -->
-          <article class="project project--flip reveal">
-            <div class="project-media">
-              <img src="assets/images/project-yaojilu.jpg"
-                   alt="药记录小程序界面预览：三块手机屏展示今日用药清单、药箱余量卡与月历打卡，朱红色点缀" loading="lazy" width="1280" height="720">
+          <article class="project reveal in" data-page-node-id="WwygRFWq6YPE5DsrhY8alH">
+            <div class="project-media" aria-hidden="true" data-page-node-id="rsgDA0jm5zL7og1kLdtPCo">
+              <svg viewBox="0 0 320 200" data-page-node-id="13lK9G0RNVv4VqdxdI3mOu">
+                <rect width="320" height="200" fill="#fff" data-page-node-id="lBQjdPT8lnKEQGk8BZq4an"></rect>
+                <rect x="0" y="0" width="320" height="34" fill="#111" data-page-node-id="2VT5bZEwr4uEACpl0gpKGg"></rect>
+                <circle cx="20" cy="17" r="5" fill="#fff" data-page-node-id="OasRDg7WJL1wMVyER6ca2C"></circle>
+                <rect x="34" y="14" width="52" height="6" fill="#666" data-page-node-id="icQe7ujGnyBqnbFJZXmKzk"></rect>
+                <rect x="26" y="58" width="120" height="10" fill="#111" data-page-node-id="vjECIu5p9B3bwcQ1t38dNR">
+                </rect>
+                <rect x="26" y="78" width="80" height="6" fill="#999" data-page-node-id="J1nHUn26STNpqUQOaeRVOZ"></rect>
+                <rect x="26" y="100" width="268" height="1" fill="#ddd" data-page-node-id="FmqNBaESGSfHAS46l6mmTf">
+                </rect>
+                <rect x="26" y="116" width="60" height="60" fill="#f0f0f0" stroke="#111"
+                  data-page-node-id="jUibvUbWHcntGRLVTdE6bG"></rect>
+                <rect x="98" y="116" width="60" height="60" fill="#fff" stroke="#bbb"
+                  data-page-node-id="qYbqYVbjEPlx9gDPjleX53"></rect>
+                <rect x="170" y="116" width="60" height="60" fill="#111" data-page-node-id="VGYG5GQjWEEA1hGCGCNqqY">
+                </rect>
+                <rect x="242" y="116" width="52" height="60" fill="#f0f0f0" stroke="#111"
+                  data-page-node-id="GbDz8OQxOLf2FuRhDvVLil"></rect>
+              </svg>
             </div>
-            <div class="project-body">
-              <p class="project-index">02 / 产品 0→1</p>
-              <h3 class="project-title">药记录 · 慢性病用药管理小程序</h3>
-              <p class="project-desc">
-                长期服药的人只有两个敌人：忘了吃、断了药。
-                这是一次完整的产品闭环——先用高保真原型推敲「临近服药提醒」的触发时机，
-                再用 uni-app 落地微信小程序：今日打卡、药箱余量预警、月历视图、
-                可保存分享的用药月报。后端用 Node.js 与 Spring Boot 各实现一版，
-                亲手验证两种选型后再做取舍。
-              </p>
-              <ul class="project-tags" aria-label="项目标签">
-                <li>微信小程序</li>
-                <li>产品原型</li>
-                <li>uni-app</li>
-                <li>全栈实现</li>
-              </ul>
-              <p class="project-meta">独立产品 · 原型 → 前端 → 双后端 · 2026.08</p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">05</span>
-          <h2 id="contact-title">联系我<span class="title-en">Contact</span></h2>
-        </header>
-        <div class="contact-grid">
-          <div class="contact-info reveal">
-            <p>如果你有合适的机会、合作想法，或只是想聊聊技术，欢迎随时写信给我。</p>
-            <ul class="contact-list">
-              <li><span>邮箱</span><a href="mailto:hello@linyuan.dev">hello@linyuan.dev</a></li>
-              <li><span>微信</span>linyuan_dev</li>
-              <li><span>GitHub</span><a href="https://github.com" rel="noopener" target="_blank">github.com/linyuan</a></li>
-              <li><span>博客</span><a href="#" rel="noopener">blog.linyuan.dev</a></li>
+            <p class="project-index" data-page-node-id="3m6YJpu9i8TJOc4Ngncwc2">01 / 小程序</p>
+            <h3 class="project-title" data-page-node-id="NEXDXd0ouqaZmpzsAS8qT9">用药记录小程序</h3>
+            <p class="project-desc" data-page-node-id="7IodXpEEwMI9uA0MTl00mo">
+              面向慢性病患者的用药管理工具，包含今日待服、药箱、历史记录与个人中心四大模块，支持多套主题切换与按月统计。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="udWtkxwgi7FZkyeEdLSRMg">
+              <li data-page-node-id="z2RnLkZqeMQBopHcYF5TLF">uni-app</li>
+              <li data-page-node-id="TIMpy2bAGIwbCIgiCTvQL3">Spring Boot</li>
+              <li data-page-node-id="zOFiabOzCKFMAV1oupCm9S">JPA</li>
+              <li data-page-node-id="fgmjFtPQV4qp32nMWWvkqi">MariaDB</li>
             </ul>
-          </div>
-          <form class="contact-form reveal" action="#" method="post">
-            <div class="form-row">
-              <div class="form-field">
-                <label for="f-name">你的名字</label>
-                <input id="f-name" name="name" type="text" placeholder="怎么称呼你？" autocomplete="name" required>
-              </div>
-              <div class="form-field">
-                <label for="f-email">邮箱</label>
-                <input id="f-email" name="email" type="email" placeholder="用于回复你" autocomplete="email" required>
-              </div>
+            <p class="project-meta" data-page-node-id="bjhF3mmQqd6EBIg0fanrG0"><span
+                data-page-node-id="XGi7BdHm3QCTXpMMHSn5Ol">独立开发 · 2026</span><span class="arrow" aria-hidden="true"
+                data-page-node-id="A1G0dD3H0Gihwgf1nZ7xEJ">→</span></p>
+          </article>
+
+          <article class="project reveal in" data-page-node-id="GpvMcAiq8qGx5azFgoGzqB">
+            <div class="project-media" aria-hidden="true" data-page-node-id="9kKdm9pcytwQ5FlEC85gCQ">
+              <svg viewBox="0 0 320 200" data-page-node-id="R6Slg4PPLe3EdtOxPd2Zz9">
+                <rect width="320" height="200" fill="#fff" data-page-node-id="qU0ezjEDFI7CmCZCsdGUYH"></rect>
+                <circle cx="160" cy="100" r="62" fill="none" stroke="#111" stroke-width="1.5"
+                  data-page-node-id="lf0ZGw4EfJsjTZYlxTUxxS"></circle>
+                <circle cx="160" cy="100" r="38" fill="#111" data-page-node-id="w6VGycANbTc60NFZkFZn9f"></circle>
+                <path d="M0 148 L80 88 L150 148 L220 62 L320 148" fill="none" stroke="#999" stroke-width="1.5"
+                  data-page-node-id="Rzv0liD9JOKZDlJOb9ymUO"></path>
+                <rect x="0" y="148" width="320" height="52" fill="#111" data-page-node-id="OMpBkkREyUl7OS2bwJQvZl">
+                </rect>
+                <rect x="24" y="168" width="70" height="8" fill="#fff" data-page-node-id="YBASXakymQMAZmHGF2wpil">
+                </rect>
+                <rect x="226" y="168" width="70" height="8" fill="#666" data-page-node-id="WDwLDfN4BbtJyC8H17uoPi">
+                </rect>
+              </svg>
             </div>
-            <div class="form-field">
-              <label for="f-msg">留言内容</label>
-              <textarea id="f-msg" name="message" rows="5" placeholder="想聊点什么？" required></textarea>
+            <p class="project-index" data-page-node-id="R642b357mT6HDAG3Ew2n9n">02 / 企业官网</p>
+            <h3 class="project-title" data-page-node-id="nPO9QGkAAJrrykSau6M9A4">企业官网定制</h3>
+            <p class="project-desc" data-page-node-id="ENAw3DxBiUNRVjFbX4TilC">
+              为中小企业打造的高端展示型官网，融合极简排版与东方建筑元素，响应式适配桌面、平板与手机，含完整内容管理结构。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="vBP5EQE0GZMf5WmPibW9u4">
+              <li data-page-node-id="TGdeRW0IAxxUCr1nF7zV1u">HTML / CSS</li>
+              <li data-page-node-id="3iB4kBFeWPGnHYhkwspYwv">JavaScript</li>
+              <li data-page-node-id="qpfPvWYHmNsfU9jCsZnTdM">响应式</li>
+              <li data-page-node-id="D2JcBm7QAQRsTUuLQJXEtQ">Nginx</li>
+            </ul>
+            <p class="project-meta" data-page-node-id="OfiUfdVTrMVXeC9CCzSXC7"><span
+                data-page-node-id="d1TuF41wSAKAuhsjNrpinD">前端交付 · 2026</span><span class="arrow" aria-hidden="true"
+                data-page-node-id="kWG58p4rON8b0GHZyRnxp1">→</span></p>
+          </article>
+
+          <article class="project reveal in" data-page-node-id="b8FnnAt6sxG9LIdlcamipz">
+            <div class="project-media" aria-hidden="true" data-page-node-id="VoN7AXcpHsSpSTwNVFH0R1">
+              <svg viewBox="0 0 320 200" data-page-node-id="2rXmDTXcHHNwS2RKfdNcc0">
+                <rect width="320" height="200" fill="#fff" data-page-node-id="Xj8cpSf4FJwf9bMxBFhPJJ"></rect>
+                <rect x="0" y="0" width="200" height="200" fill="#111" data-page-node-id="NWa2PxZ487Oab7wrCow2tz">
+                </rect>
+                <rect x="0" y="0" width="200" height="30" fill="#222" data-page-node-id="zprXXaSFL5ndft0jf03aGy"></rect>
+                <rect x="14" y="12" width="40" height="6" fill="#888" data-page-node-id="cF34MJ3gQiC2mppm1COyxO"></rect>
+                <rect x="16" y="46" width="72" height="8" fill="#fff" data-page-node-id="fSMZVPjKkEjz7qyegIfwwx"></rect>
+                <rect x="16" y="64" width="48" height="6" fill="#777" data-page-node-id="DsH7NH9mXHv5HXs9HQadIM"></rect>
+                <rect x="224" y="46" width="80" height="8" fill="#111" data-page-node-id="vXBYX4LAy4Ktc5dhCTYbyf">
+                </rect>
+                <rect x="224" y="64" width="56" height="6" fill="#bbb" data-page-node-id="3abVLGtlPaD0fBAZtfkPlw">
+                </rect>
+                <rect x="224" y="90" width="80" height="94" fill="#f2f2f2" stroke="#111"
+                  data-page-node-id="22IAsio2zwG6XAfR4IbqwA"></rect>
+                <path d="M232 168 L248 148 L262 158 L296 116" fill="none" stroke="#111" stroke-width="1.5"
+                  data-page-node-id="nRUmgGdJ4ibRWFSFcKWFRN"></path>
+              </svg>
             </div>
-            <button type="submit" class="btn btn-primary">发送留言<span aria-hidden="true">→</span></button>
-          </form>
+            <p class="project-index" data-page-node-id="QXtHvrGNXbmWhXUJC60s1m">03 / 后台系统</p>
+            <h3 class="project-title" data-page-node-id="uuKZGvbE8lZlYgmBHNWR5g">多租户管理后台</h3>
+            <p class="project-desc" data-page-node-id="70OWURAOTrqcO1RPeCOnz9">
+              面向 SaaS 场景的多租户管理后台，涵盖租户管理、套餐计费与配额、功能门控三大模块，配套完整的 Design System。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="KeoIU3YzXRaVY5HxnwXGkA">
+              <li data-page-node-id="g4XHHCSJugnsVCe7aOsEAs">Vue 3</li>
+              <li data-page-node-id="wNTUpqWwcz7DjoEl7Vcack">Element Plus</li>
+              <li data-page-node-id="Xj8JdDprbNZMqk1gO0rlGC">Java</li>
+              <li data-page-node-id="GnlXmlSqqu8immzluvFEYr">Design System</li>
+            </ul>
+            <p class="project-meta" data-page-node-id="Q1miLXUYtR0lsFE2C8A05y"><span
+                data-page-node-id="MtMbFvWGGHdQ5NlYSPaBw0">架构设计 · 2026</span><span class="arrow" aria-hidden="true"
+                data-page-node-id="9cE6dkm9V7wtDDW5AF4ZbQ">→</span></p>
+          </article>
+
+          <article class="project reveal in" data-page-node-id="ybCMk6EdoH1dVzbHcNg7U2">
+            <div class="project-media" aria-hidden="true" data-page-node-id="5bJMTCecTZACMeylRLIhch">
+              <svg viewBox="0 0 320 200" data-page-node-id="xTCR05Y9Sfl2S8Hz7ai9Xr">
+                <rect width="320" height="200" fill="#fff" data-page-node-id="IqFbAlfarBGHBWwDHrTGON"></rect>
+                <rect x="30" y="30" width="260" height="140" fill="none" stroke="#111" stroke-width="1.5"
+                  data-page-node-id="E3pwBvepJCiaewHy2GEyHu"></rect>
+                <path d="M30 60 H290" stroke="#111" stroke-width="1.5" data-page-node-id="wuKy0AY5gfL5jLxphoFmJS">
+                </path>
+                <path d="M120 30 V170" stroke="#111" stroke-width="1.5" data-page-node-id="1I5A940M8KXxD6cROtOwVI">
+                </path>
+                <rect x="44" y="44" width="52" height="8" fill="#111" data-page-node-id="GE2ONWDfAdVVSj2GpJfx72"></rect>
+                <rect x="134" y="44" width="52" height="8" fill="#999" data-page-node-id="NFt8Mbt0NumaAsVCmbtmyV">
+                </rect>
+                <rect x="44" y="80" width="60" height="6" fill="#ddd" data-page-node-id="dZ7GTJf6TBTisX0dElMmIF"></rect>
+                <rect x="134" y="80" width="100" height="6" fill="#ddd" data-page-node-id="APwV2FQcnjyGYCMTAU3FVo">
+                </rect>
+                <rect x="44" y="100" width="60" height="6" fill="#ddd" data-page-node-id="eM2JL3SlJWfsLkZpphnLIT">
+                </rect>
+                <rect x="134" y="100" width="76" height="6" fill="#ddd" data-page-node-id="3KvXNcCBBBUWMVisWXuLGR">
+                </rect>
+                <rect x="44" y="120" width="60" height="6" fill="#ddd" data-page-node-id="ovntFnRMrElSVvPqdWwK9b">
+                </rect>
+                <rect x="134" y="120" width="120" height="6" fill="#ddd" data-page-node-id="Qt5jbJZgGdjINeJdEhYAPT">
+                </rect>
+                <rect x="44" y="140" width="60" height="6" fill="#ddd" data-page-node-id="6Zpg9LR3LCTKnHFFCagcIj">
+                </rect>
+                <rect x="134" y="140" width="90" height="6" fill="#ddd" data-page-node-id="k1i2HsDhAuN6EAhwGXemVH">
+                </rect>
+              </svg>
+            </div>
+            <p class="project-index" data-page-node-id="9uEnQHfezNMeLSXlBK8Psc">04 / 效率工具</p>
+            <h3 class="project-title" data-page-node-id="n5x0dnEzgdaLFiwEydw9zE">Excel 批量改名助手</h3>
+            <p class="project-desc" data-page-node-id="lTPDOMZfITEURFYsJ8AAMt">
+              读取 Excel 指定字段，批量生成文件名并完成重命名，替代人工逐个修改，处理上千条记录仅需数秒。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="AXcN4mdqlpdnucNFmyjKv7">
+              <li data-page-node-id="bvZFLZer0BELIq2Pjjvkqy">Python</li>
+              <li data-page-node-id="hGjyBAHpmz2FSzkLP9z8ly">openpyxl</li>
+              <li data-page-node-id="SVkBC7ZvGHmkwqrrgysPHX">自动化</li>
+              <li data-page-node-id="HgiNd10KlJFMXb2sDCOBCm">CLI</li>
+            </ul>
+            <p class="project-meta" data-page-node-id="hsCjTzxuwsxMrieeEGrbyp"><span
+                data-page-node-id="NnaD6QWj1ViZjdXlAL3GDG">脚本工具 · 2025</span><span class="arrow" aria-hidden="true"
+                data-page-node-id="mXfLerKjEUdmupLlb5yV9i">→</span></p>
+          </article>
+
+          <article class="project reveal in" data-page-node-id="Y15kIpPUClQTBKZ732GHDx">
+            <div class="project-media" aria-hidden="true" data-page-node-id="w5KkzXRSEpIRa5CP8QtdHr">
+              <svg viewBox="0 0 320 200" data-page-node-id="vd9VatXVZESJqs1XXDPBD9">
+                <rect width="320" height="200" fill="#111" data-page-node-id="a7DV40fDA2TAkp1eNx7adf"></rect>
+                <rect x="118" y="46" width="84" height="108" rx="10" fill="none" stroke="#fff" stroke-width="1.5"
+                  data-page-node-id="yImDfrqGcXFySD08Vq3V1K"></rect>
+                <path d="M160 66 L160 134 L146 122 M160 134 L174 122" fill="none" stroke="#fff" stroke-width="1.5"
+                  data-page-node-id="NCaBsITTLz3bIUOZ4GW3XR"></path>
+                <path d="M118 92 H202" stroke="#666" stroke-width="1" data-page-node-id="zBssO51tLxQJNSMplTEZT9"></path>
+                <rect x="54" y="86" width="34" height="34" fill="#fff" opacity=".25"
+                  data-page-node-id="8UheZhASF3RzJhl5oPAyxq"></rect>
+                <rect x="232" y="86" width="34" height="34" fill="#fff" opacity=".6"
+                  data-page-node-id="tluEq6OHs1tFogoEj3iIQO"></rect>
+              </svg>
+            </div>
+            <p class="project-index" data-page-node-id="NEHpkPLJrqEqVfvcZkvC7A">05 / 桌面工具</p>
+            <h3 class="project-title" data-page-node-id="1qAspr7vjNDVofHQs6rTcX">视频解析下载工具</h3>
+            <p class="project-desc" data-page-node-id="GJQCCIRh69BO9ondde7lND">
+              本地运行的视频下载工具，支持从含表情与话题标签的分享文本中自动抽取链接，下载完成后即时预览播放。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="Lgp6grN7Xs6BJvxEcWkFxt">
+              <li data-page-node-id="ekpB9ZLiBg37KOmWXFj7IS">Vue 3</li>
+              <li data-page-node-id="BeszJoN3Y8E7aoXwQBOD9B">FastAPI</li>
+              <li data-page-node-id="XNqLIKBUdbBaAcX74GDzR3">Vant</li>
+              <li data-page-node-id="IHR5vu74IQlDfsYvlIFug3">TypeScript</li>
+            </ul>
+            <p class="project-meta" data-page-node-id="d5cHoJZpP99vmTfILb0Vjp"><span
+                data-page-node-id="XQN9mE7HNBpawryFq2xdpQ">全栈开发 · 2026</span><span class="arrow" aria-hidden="true"
+                data-page-node-id="IA9HDDtt1TeHfiinAPxkFv">→</span></p>
+          </article>
+
+          <article class="project reveal in" data-page-node-id="PqtItS1Qunfp6rmibA6BB5">
+            <div class="project-media" aria-hidden="true" data-page-node-id="zgvELwx6MI3JTe8oeqP5Jq">
+              <svg viewBox="0 0 320 200" data-page-node-id="AIUyCsloqAIDAqFLbxki2b">
+                <rect width="320" height="200" fill="#fff" data-page-node-id="zBPwFTH7St5cJzSuFhJ47E"></rect>
+                <rect x="0" y="0" width="320" height="200" fill="none" stroke="#111" stroke-width="1"
+                  data-page-node-id="q1AhTiM1QWnly71z9QCckY"></rect>
+                <path d="M0 100 H320 M160 0 V200" stroke="#eee" stroke-width="1"
+                  data-page-node-id="0INVjWbnTgzJlsdAwpMlw2"></path>
+                <circle cx="160" cy="100" r="54" fill="none" stroke="#111" stroke-width="1.5"
+                  data-page-node-id="rAYY4AcbnRQ4EgJPCrilry"></circle>
+                <path d="M160 46 A54 54 0 0 1 214 100 L160 100 Z" fill="#111"
+                  data-page-node-id="gjkyHhXZPY27LEiXbnWh5v"></path>
+                <path d="M160 100 L214 100 A54 54 0 0 1 160 154 Z" fill="#999"
+                  data-page-node-id="e0VC7Q7VXD7zti2gkXmEOx"></path>
+                <rect x="238" y="34" width="58" height="5" fill="#111" data-page-node-id="UieZ2UKllMOvhQInaBVxCZ">
+                </rect>
+                <rect x="238" y="46" width="40" height="5" fill="#bbb" data-page-node-id="riWvJSjZxAwt1e7Xzakhlj">
+                </rect>
+                <rect x="238" y="58" width="50" height="5" fill="#bbb" data-page-node-id="sJQ2nE95RU7JWYFM8svN3F">
+                </rect>
+              </svg>
+            </div>
+            <p class="project-index" data-page-node-id="TYuGrLCCTNreZHU9M8xGs8">06 / 数据可视化</p>
+            <h3 class="project-title" data-page-node-id="H59HuRVBoFPUTKV9OeN6Ws">运营数据看板</h3>
+            <p class="project-desc" data-page-node-id="imyGB4eq9VrmYOAv4BiDyG">
+              将分散的业务数据汇总为统一看板，按日 / 周 / 月多维对比，自动输出结构化报表，辅助运营决策。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="QpqfGUsz8gjy7MxVJddRD2">
+              <li data-page-node-id="iAvx3z0lXjWymkW1lDkfOh">Python</li>
+              <li data-page-node-id="Oe9VAtcvIuai8HaTirj1wT">SQL</li>
+              <li data-page-node-id="SmJLS34JaL4l1xTE1zXDGt">ECharts</li>
+              <li data-page-node-id="0cRO2gF6HiEgiNs16fPH7B">报表导出</li>
+            </ul>
+            <p class="project-meta" data-page-node-id="xzQ63HTngSovGKelgtx7zs"><span
+                data-page-node-id="LHFSuCHZMWlXkbJIFLQ4is">数据开发 · 2025</span><span class="arrow" aria-hidden="true"
+                data-page-node-id="dACyypK92rDTC9ymFBf3Fv">→</span></p>
+          </article>
+
         </div>
       </div>
     </section>
+
+    <!-- ========== 05 联系 ========== -->
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-wordmark" aria-hidden="true">林远</p>
-      <p>© <span id="year">2026</span> 林远 · 用 HTML &amp; CSS 手工打造 · <a href="#top">回到顶部 ↑</a></p>
+  <footer class="site-footer" data-page-node-id="ZlEaXtzaSe5l0yCKDf1vYm">
+    <div class="container" data-page-node-id="oY7tmEvnDTg6ON9taaWEpM">
+      <p data-page-node-id="MAbNuURy4RNkOUdIMoEpzg">© <span id="year"
+          data-page-node-id="NMizxJmbC19AVmJW4lMRwL">2026</span> Alan · 手工打造 · <a href="#top"
+          data-page-node-id="lHCCvcf272Pui8csbJziC9">回到顶部 ↑</a></p>
     </div>
   </footer>
 
   <script>
-    // 滚动显现
+    // 滚动进度条
+    const progress = document.getElementById('progress');
+    const header = document.querySelector('.site-header');
+    const onScroll = () => {
+      const y = window.scrollY;
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.transform = 'scaleX(' + (h > 0 ? Math.min(y / h, 1) : 0) + ')';
+      header.classList.toggle('scrolled', y > 24);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+
+    // 入场动画
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
@@ -315,10 +1703,10 @@
           io.unobserve(e.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
-    // 技能条动画
+    // 技能条
     const skillIO = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
@@ -329,11 +1717,26 @@
     }, { threshold: 0.4 });
     document.querySelectorAll('.skill-fill').forEach((el) => skillIO.observe(el));
 
-    // 吸顶导航阴影
-    const header = document.querySelector('.site-header');
-    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    // 数字滚动
+    const countIO = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        const target = parseInt(el.dataset.count, 10) || 0;
+        const suffix = el.dataset.suffix || '';
+        const dur = 1200;
+        const start = performance.now();
+        const step = (now) => {
+          const p = Math.min((now - start) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        countIO.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count]').forEach((el) => countIO.observe(el));
 
     // 移动端菜单
     const navToggle = document.querySelector('.nav-toggle');
@@ -355,9 +1758,15 @@
         navToggle.focus();
       }
     });
+    window.addEventListener('resize', () => { if (window.innerWidth > 980) closeMenu(); });
 
     // 年份
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+
+
+
 </body>
+
 </html>

@@ -1,223 +1,1125 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>林远 · 个人简历</title>
-  <meta name="description" content="林远的个人简历 — 全栈工程师 / 独立开发者">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23201A12'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23F7F2E9' font-family='serif'%3E%E6%9E%97%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<html lang="zh-CN" data-page-node-id="8EvcGghEOgqyP9yGqNiUio">
+
+<head data-page-node-id="nGYkjaBG6lbzGKBgONFGpd">
+  <meta charset="UTF-8" data-page-node-id="KH8oRlJh2oDS59LfyGWQ85">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="x6HWbf8Ash7e3JlBlYgYww">
+  <title>个人简历 · Alan</title>
+  <meta name="description" content="个人简历 — 开发工程师 · Java / Python" data-page-node-id="n5occHelAPBzlwQlvL042A">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FFFFFF'/%3E%3Crect x='8' y='8' width='48' height='48' fill='none' stroke='%230B0B0C' stroke-width='4'/%3E%3C/svg%3E"
+    data-page-node-id="LAKFaf8acAbLRjYfmCN359">
   <style>
-    /* ===== 简历页专属（复用全站组件） ===== */
-    .site-nav a.active { color: var(--ink); }
-    .site-nav a.active::after { transform: scaleX(1); }
+    /* ============ 设计令牌：与 index.html 完全一致（仅黑白灰） ============ */
+    :root {
+      --bg: #FFFFFF;
+      --bg-2: #FFFFFF;
+      --surface: #FAFAFA;
+      --surface-2: #F4F4F5;
+      --line: #E4E4E7;
+      --line-2: #C7C7CD;
+      --text: #0B0B0C;
+      --text-2: #55555C;
+      --text-3: #8C8C94;
+      --inv-bg: #F4F4F5;
+      --inv-text: #0B0B0C;
+      --inv-line: #DEDEE1;
+      --inv-muted: #6E6E76;
+      --solid: #0B0B0C;
+      --solid-text: #FFFFFF;
 
-    .resume-hero { padding-bottom: clamp(40px, 6vh, 72px); }
-    .resume-hero .hero-title { font-size: clamp(40px, 6vw, 64px); }
-    .resume-hero .hero-sub { margin-top: 18px; }
-    .resume-contact {
-      margin-top: 14px;
-      font-size: 14.5px;
-      color: var(--muted);
-      max-width: 72ch;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      --font-serif: "Playfair Display", "Times New Roman", Georgia, "Songti SC", "SimSun", serif;
+      --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas, "Courier New", monospace;
+
+      --pad: clamp(20px, 5vw, 64px);
+      --max: 1240px;
+      --radius: 2px;
+      --ease: cubic-bezier(.22, .61, .36, 1);
     }
-    .resume-contact a { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 3px; }
-    .resume-hero .hero-actions { margin-top: 28px; }
-    .resume-hero .hero-actions::after { content: none; }
 
-    .resume-summary {
-      max-width: 74ch;
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    ul,
+    ol,
+    dl {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ::selection {
+      background: #0B0B0C;
+      color: #fff;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 200;
+      background: #0B0B0C;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 2px;
+      background: var(--solid);
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      z-index: 120;
+      will-change: transform;
+    }
+
+    /* ============ 头部 ============ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      border-bottom: 1px solid transparent;
+      transition: background .4s var(--ease), border-color .4s var(--ease);
+    }
+
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, .88);
+      backdrop-filter: blur(14px) saturate(120%);
+      -webkit-backdrop-filter: blur(14px) saturate(120%);
+      border-bottom-color: var(--line);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      height: 76px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    .logo-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line-2);
+      border-radius: 50%;
       font-family: var(--font-serif);
-      font-size: clamp(15.5px, 1.8vw, 17.5px);
-      line-height: 2.05;
-      color: color-mix(in srgb, var(--ink) 88%, var(--muted));
+      font-size: 15px;
+      transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
     }
 
-    .skill-lines { list-style: none; max-width: 860px; }
+    .logo:hover .logo-mark {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .logo-text {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 15px;
+    }
+
+    .logo-text em {
+      font-style: normal;
+      color: var(--text-3);
+    }
+
+    .logo-text .en {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .site-nav a {
+      position: relative;
+      font-size: 14px;
+      color: var(--text-2);
+      transition: color .25s;
+    }
+
+    .site-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: transform .35s var(--ease);
+    }
+
+    .site-nav a:hover {
+      color: var(--text);
+    }
+
+    .site-nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .site-nav a.active {
+      color: var(--text);
+    }
+
+    .site-nav a.active::after {
+      transform: scaleX(1);
+    }
+
+    .site-nav .nav-cta {
+      padding: 9px 18px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .site-nav .nav-cta::after {
+      display: none;
+    }
+
+    .site-nav .nav-cta:hover {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line-2);
+      border-radius: var(--radius);
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      place-items: center;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 18px;
+      height: 1.5px;
+      background: var(--text);
+      margin: 4px auto;
+      transition: transform .3s var(--ease), opacity .2s;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg);
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg);
+    }
+
+    /* ============ 按钮 ============ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      background: transparent;
+      color: var(--text);
+      transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease);
+    }
+
+    .btn span {
+      transition: transform .3s var(--ease);
+    }
+
+    .btn-primary {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: transparent;
+      color: var(--solid);
+    }
+
+    .btn-primary:hover span {
+      transform: translateY(3px);
+    }
+
+    .btn-ghost:hover {
+      background: var(--solid);
+      color: var(--solid-text);
+      border-color: var(--solid);
+    }
+
+    .btn-ghost:hover span {
+      transform: translateX(4px);
+    }
+
+    /* ============ 简历头部 ============ */
+    .resume-hero {
+      padding: calc(76px + clamp(44px, 7vh, 92px)) 0 clamp(40px, 6vh, 72px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 22px;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--line-2);
+    }
+
+    .resume-name {
+      font-size: clamp(38px, 6.4vw, 72px);
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.035em;
+    }
+
+    .resume-name .en {
+      display: block;
+      margin-top: 14px;
+      font-family: var(--font-mono);
+      font-size: clamp(11px, 1.3vw, 14px);
+      font-weight: 400;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+
+    .resume-role {
+      font-size: clamp(15px, 1.8vw, 19px);
+      color: var(--text);
+      margin-top: 20px;
+    }
+
+    .resume-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 22px;
+      margin-top: 12px;
+      font-size: 14.5px;
+      color: var(--text-2);
+      max-width: 76ch;
+    }
+
+    .resume-contact a {
+      border-bottom: 1px solid var(--line-2);
+      transition: border-color .25s;
+    }
+
+    .resume-contact a:hover {
+      border-color: var(--solid);
+    }
+
+    .resume-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    /* ============ 区块 ============ */
+    .section {
+      padding: clamp(56px, 8vh, 96px) 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-invert {
+      background: var(--inv-bg);
+      color: var(--inv-text);
+      border-top-color: var(--inv-bg);
+    }
+
+    .section-invert .section-no,
+    .section-invert .title-en {
+      color: var(--inv-muted);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: clamp(16px, 3vw, 40px);
+      margin-bottom: clamp(28px, 4vw, 44px);
+      flex-wrap: wrap;
+    }
+
+    .section-no {
+      font-family: var(--font-mono);
+      font-size: clamp(11px, 1.2vw, 13px);
+      letter-spacing: .2em;
+      color: var(--text-3);
+      padding-top: .6em;
+      min-width: 42px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(26px, 3.6vw, 40px);
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .title-en {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      font-weight: 400;
+    }
+
+    /* 个人简介 */
+    .resume-summary {
+      max-width: 78ch;
+      font-size: clamp(15px, 1.4vw, 17px);
+      line-height: 1.95;
+      color: var(--text-2);
+    }
+
+    /* 核心技能 */
+    .skill-lines {
+      max-width: 880px;
+    }
+
     .skill-lines li {
       display: grid;
-      grid-template-columns: 112px 1fr;
-      gap: 18px;
-      padding: 13px 0;
-      font-size: 14.5px;
-      color: var(--muted);
+      grid-template-columns: 148px 1fr;
+      gap: clamp(16px, 3vw, 30px);
+      padding: 15px 0;
+      font-size: 15px;
+      color: var(--text-2);
     }
-    .skill-lines li + li { border-top: 1px dashed var(--line-strong); }
-    .skill-lines strong { color: var(--ink); font-weight: 600; letter-spacing: 0.04em; }
 
+    .skill-lines li+li {
+      border-top: 1px dashed var(--line-2);
+    }
+
+    .skill-lines strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* 时间线 */
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: clamp(20px, 4vw, 48px);
+      padding: 0 0 40px 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: 190px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: var(--line-2);
+      transform: translateX(-50%);
+    }
+
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      left: 190px;
+      top: 9px;
+      width: 7px;
+      height: 7px;
+      background: #fff;
+      border: 1px solid var(--text-3);
+      transform: translateX(-50%) rotate(45deg);
+      transition: background .3s var(--ease), border-color .3s var(--ease);
+    }
+
+    .timeline-item:hover::after {
+      background: var(--solid);
+      border-color: var(--solid);
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-item:last-child::before {
+      bottom: auto;
+      height: 9px;
+    }
+
+    .timeline-when {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: .1em;
+      color: var(--text-3);
+      padding-top: 3px;
+      padding-right: 20px;
+    }
+
+    .timeline-body {
+      padding-left: clamp(20px, 3vw, 40px);
+    }
+
+    .timeline-body h3 {
+      font-size: clamp(17px, 1.9vw, 21px);
+      margin-bottom: 8px;
+    }
+
+    .timeline-org {
+      display: inline-block;
+      font-size: 13px;
+      color: var(--text-3);
+      font-weight: 400;
+    }
+
+    .timeline-body p {
+      color: var(--text-2);
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    /* 项目条目 */
     .project-item {
       display: grid;
-      grid-template-columns: 170px minmax(0, 1fr);
+      grid-template-columns: 190px minmax(0, 1fr);
       gap: clamp(20px, 4vw, 48px);
-      padding: 20px 0;
+      padding: 18px 0;
     }
-    .project-item + .project-item { border-top: 1px dashed var(--line-strong); }
+
+    .project-item+.project-item {
+      border-top: 1px dashed var(--line-2);
+    }
+
     .project-item .when {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 16px;
-      color: var(--accent-dark);
-      padding-top: 2px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: .1em;
+      color: var(--text-3);
+      padding-top: 4px;
     }
-    .project-item h3 { font-family: var(--font-serif); font-size: clamp(16px, 2vw, 19px); font-weight: 700; }
-    .project-item p { margin-top: 6px; color: var(--muted); font-size: 14.5px; max-width: 68ch; }
 
-    .education .edu-when {
-      font-family: var(--font-display);
-      font-style: italic;
+    .project-item h3 {
+      font-size: clamp(17px, 1.9vw, 21px);
+    }
+
+    .project-item p {
+      margin-top: 8px;
+      color: var(--text-2);
       font-size: 15px;
-      color: var(--accent-dark);
+      line-height: 1.85;
+      max-width: 74ch;
     }
 
-    @media (max-width: 860px) {
-      .project-item { grid-template-columns: 1fr; gap: 2px; }
-      .skill-lines li { grid-template-columns: 96px 1fr; gap: 12px; }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
     }
 
-    /* 打印 / 下载 PDF：纯白极简版式 */
-    @page { size: A4; margin: 14mm 15mm; }
+    .project-tags li {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: .06em;
+      padding: 4px 9px;
+      border: 1px solid var(--line-2);
+      border-radius: 999px;
+      color: var(--text-3);
+    }
+
+    /* 教育背景 */
+    .education {
+      display: flex;
+      align-items: baseline;
+      gap: clamp(16px, 3vw, 40px);
+    }
+
+    .education h3 {
+      font-size: clamp(17px, 1.9vw, 21px);
+      margin-bottom: 8px;
+    }
+
+    .education p {
+      color: var(--text-2);
+      font-size: 15px;
+    }
+
+    /* ============ 页脚 ============ */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 0;
+    }
+
+    .site-footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: .1em;
+      color: var(--text-3);
+      text-transform: uppercase;
+    }
+
+    .site-footer a:hover {
+      color: var(--text);
+    }
+
+    /* ============ 入场动画 ============ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ============ 响应式 ============ */
+    @media (max-width: 1080px) {
+      .site-nav {
+        gap: 22px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .header-inner {
+        height: 64px;
+      }
+
+      .site-nav {
+        position: fixed;
+        inset: 64px 0 auto 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(255, 255, 255, .97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
+        padding: 8px var(--pad) 20px;
+        transform: translateY(-12px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
+        max-height: calc(100vh - 64px);
+        overflow-y: auto;
+      }
+
+      .site-nav.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+      }
+
+      .site-nav a {
+        padding: 15px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 15px;
+        color: var(--text);
+      }
+
+      .site-nav a::after {
+        display: none;
+      }
+
+      .site-nav .nav-cta {
+        margin-top: 16px;
+        text-align: center;
+        border: 1px solid var(--line-2);
+        border-radius: 999px;
+        padding: 14px;
+      }
+
+      .nav-toggle {
+        display: grid;
+      }
+
+      .resume-hero {
+        padding-top: calc(64px + 40px);
+      }
+
+      .timeline-item,
+      .project-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-bottom: 34px;
+      }
+
+      .timeline-item {
+        padding-left: 22px;
+      }
+
+      .timeline-item::before,
+      .timeline-item::after {
+        left: 0;
+      }
+
+      .timeline-item::after {
+        transform: translateX(0) rotate(45deg);
+      }
+
+      .timeline-when {
+        padding: 0;
+      }
+
+      .timeline-body {
+        padding-left: 0;
+      }
+
+      .education {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .skill-lines li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        padding: 13px 0;
+      }
+
+      .resume-contact {
+        gap: 4px 16px;
+        font-size: 14px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* ============ 打印 / 存为 PDF：A4 纯白极简 ============ */
+    @page {
+      size: A4;
+      margin: 14mm 15mm;
+    }
+
     @media print {
-      .site-header, .site-footer, .hero-actions, .grain, .skip-link,
-      .hero-kicker, .section-no, .title-en, .timeline::before,
-      .timeline-item::before { display: none !important; }
-      body { background: #fff !important; font-size: 11.5px; color: #1a1a1a; }
-      .hero, .section { padding: 7px 0 !important; background: none !important; border: none !important; }
-      .section-tint { background: #fff !important; }
-      .timeline { padding-left: 0 !important; }
-      .resume-hero .hero-title { font-size: 26px; color: #000; }
-      .resume-hero .hero-title .hero-name-en { margin-top: 4px; letter-spacing: 0.3em; font-size: 12px; color: #666; }
-      .hero-sub { margin-top: 8px; font-size: 14px; color: #333; }
-      .hero-sub::before { content: none; }
-      .resume-contact { margin-top: 4px; font-size: 11.5px; color: #444; }
-      .resume-contact a { color: #1a1a1a; text-decoration: none; }
-      .section-head { gap: 0; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1.5px solid #222; }
-      .section-head h2 { font-size: 14.5px; color: #000; }
-      .resume-summary { max-width: none; font-size: 11.5px; line-height: 1.7; color: #333; }
-      .skill-lines { max-width: none; }
-      .skill-lines li { grid-template-columns: 100px 1fr; gap: 14px; padding: 4px 0; font-size: 11px; color: #333; }
-      .skill-lines li + li { border-top: 1px solid #e5e5e5; }
-      .skill-lines strong { color: #000; }
-      .timeline-item { grid-template-columns: 1fr; gap: 0; padding-bottom: 9px; }
-      .timeline-when { padding-top: 0; font-family: var(--font-sans); font-style: normal; font-size: 11px; color: #666; }
-      .timeline-body h3 { font-size: 12.5px; color: #000; }
-      .timeline-org { color: #555; }
-      .timeline-body p { margin-top: 3px; font-size: 11.5px; color: #333; }
-      .project-item { grid-template-columns: 1fr; gap: 0; padding: 6px 0; }
-      .project-item + .project-item { border-top: 1px solid #e5e5e5; }
-      .project-item .when { padding-top: 0; font-family: var(--font-sans); font-style: normal; font-size: 11px; color: #666; }
-      .project-item h3 { font-size: 12.5px; color: #000; }
-      .project-item p { margin-top: 2px; font-size: 11.5px; color: #333; }
-      .education { border: none; background: none; padding: 0; gap: 8px; }
-      .education h3 { font-size: 12.5px; }
-      .education p { margin-top: 2px; font-size: 11.5px; color: #333; }
-      .edu-when { font-family: var(--font-sans); font-style: normal; font-size: 11px; color: #666; }
-      .skill-lines li, .timeline-item, .project-item, .education { break-inside: avoid; }
-      .section-head { break-after: avoid; }
+
+      .site-header,
+      .site-footer,
+      .resume-actions,
+      .skip-link,
+      .scroll-progress,
+      .nav-toggle {
+        display: none !important;
+      }
+
+      body {
+        background: #fff !important;
+        font-size: 11.5px;
+        color: #1a1a1a;
+      }
+
+      .resume-hero,
+      .section {
+        padding: 8px 0 !important;
+        background: none !important;
+        border: none !important;
+      }
+
+      .section-invert {
+        background: #fff !important;
+      }
+
+      .resume-name {
+        font-size: 26px;
+        color: #000;
+      }
+
+      .resume-name .en {
+        margin-top: 4px;
+        font-size: 11px;
+        color: #666;
+      }
+
+      .resume-role {
+        margin-top: 6px;
+        font-size: 14px;
+        color: #222;
+      }
+
+      .resume-contact {
+        margin-top: 4px;
+        font-size: 11.5px;
+        color: #444;
+      }
+
+      .resume-contact a {
+        border: none;
+        color: #1a1a1a;
+      }
+
+      .section-head {
+        gap: 0;
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 1.5px solid #222;
+      }
+
+      .section-head h2 {
+        font-size: 14.5px;
+        color: #000;
+      }
+
+      .title-en,
+      .section-no {
+        color: #666;
+      }
+
+      .resume-summary {
+        max-width: none;
+        font-size: 11.5px;
+        line-height: 1.7;
+        color: #333;
+      }
+
+      .skill-lines {
+        max-width: none;
+      }
+
+      .skill-lines li {
+        grid-template-columns: 104px 1fr;
+        gap: 14px;
+        padding: 4px 0;
+        font-size: 11px;
+        color: #333;
+      }
+
+      .skill-lines li+li {
+        border-top: 1px solid #e5e5e5;
+      }
+
+      .skill-lines strong {
+        color: #000;
+      }
+
+      .timeline-item,
+      .project-item {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 6px 0;
+      }
+
+      .timeline-item {
+        padding-left: 0;
+      }
+
+      .timeline-item::before,
+      .timeline-item::after {
+        display: none;
+      }
+
+      .timeline-when,
+      .project-item .when {
+        padding-top: 0;
+        font-size: 11px;
+        color: #666;
+      }
+
+      .timeline-body {
+        padding-left: 0;
+      }
+
+      .timeline-body h3,
+      .project-item h3 {
+        font-size: 12.5px;
+        color: #000;
+      }
+
+      .timeline-body p,
+      .project-item p {
+        margin-top: 3px;
+        font-size: 11.5px;
+        color: #333;
+      }
+
+      .project-tags {
+        display: none;
+      }
+
+      .project-item+.project-item,
+      .timeline-item+.timeline-item {
+        border-top: 1px solid #e5e5e5;
+      }
+
+      .education h3 {
+        font-size: 12.5px;
+      }
+
+      .education p {
+        font-size: 11.5px;
+        color: #333;
+      }
+
+      .skill-lines li,
+      .timeline-item,
+      .project-item,
+      .education {
+        break-inside: avoid;
+      }
+
+      .section-head {
+        break-after: avoid;
+      }
     }
   </style>
 </head>
-<body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
-  <div class="grain" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">
-        <span class="logo-mark" aria-hidden="true">林</span>
-        <span class="logo-text">林远<em>/</em>LIN&nbsp;YUAN</span>
+<body data-page-node-id="6N0jnnBnEwAQQ66Sacak0R">
+  <a class="skip-link" href="#main" data-page-node-id="HCZGYXDUNdoP2OdNOWRmit">跳到主要内容</a>
+  <div class="scroll-progress" id="progress" aria-hidden="true" data-page-node-id="kvERcwC3M9ixB2K13BpjZO"></div>
+
+  <header class="site-header" id="top" data-page-node-id="hXg985hIcF3FyX9qXkHBrs">
+    <div class="container header-inner" data-page-node-id="t0wTCjSXGAGuApgY70GoZy">
+      <a class="logo" href="index.html" data-page-node-id="XCXNPnIjjBacuM8NUGgNpT">
+        <span class="logo-mark" aria-hidden="true" data-page-node-id="5jPUl7gtCQbOI0Lsh8rJWD">简</span>
+        <span class="logo-text" data-page-node-id="VTDvC5esAGGoEQNOgFa5Ce">Alan<em
+            data-page-node-id="cI4v3T95QJtWDJl5g1z05y">/</em><span class="en"
+            data-page-node-id="UocticHQbYKJ0VJSDeiSng">alan</span></span>
       </a>
-      <nav class="site-nav" id="site-menu" aria-label="主导航">
-        <a href="index.html#about">关于</a>
-        <a href="index.html#skills">技能</a>
-        <a href="index.html#experience">经历</a>
-        <a href="index.html#works">作品</a>
-        <a href="resume.html" class="active" aria-current="page">个人简历</a>
-        <a href="index.html#contact" class="nav-cta">联系我</a>
+      <nav class="site-nav" id="site-menu" aria-label="主导航" data-page-node-id="dmyBYVtx8d5JSCZ6xL1Nkz">
+        <a href="index.html" data-page-node-id="QxgSVA2qiR6aXi6Q7Q0GXB">首页</a>
+        <a href="index.html#skills" data-page-node-id="3uV4ddexEbXAHnB63JNMaC">技能</a>
+        <a href="index.html#experience" data-page-node-id="sh99H6jmTEgjqgtqy8Pdis">经历</a>
+        <a href="index.html#projects" data-page-node-id="Pf0WYLPLLj3eF9XZ6eOjzT">作品</a>
+        <a href="resume.html" class="active" aria-current="page" data-page-node-id="lZnmZAOXbmANDXtjfAGqBS">简历</a>
       </nav>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="打开菜单">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="打开菜单"
+        data-page-node-id="e49waHiPBtnBo0qNnxNxpV">
+        <span data-page-node-id="cuB2ttvMrkoSl4ee5n8U1A"></span><span
+          data-page-node-id="LVhvwpYYqbJgLGPjkgxegx"></span><span data-page-node-id="gdfxMm3a0Y1lnfooKJlcva"></span>
       </button>
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" data-page-node-id="rxaeNUwfsxk7Q1snfSooxh">
+
     <!-- 简历头 -->
-    <section class="hero resume-hero" aria-labelledby="resume-title">
-      <div class="container">
-        <p class="hero-kicker reveal">个人简历 · RESUME · 2026</p>
-        <h1 class="hero-title reveal" id="resume-title">林远<span class="hero-name-en">LIN&nbsp;YUAN</span></h1>
-        <p class="hero-sub reveal">全栈工程师 · 独立开发者</p>
-        <p class="resume-contact reveal">
-          上海（可远程） · <a href="mailto:hello@linyuan.dev">hello@linyuan.dev</a> · 微信 linyuan_dev ·
-          github.com/linyuan · blog.linyuan.dev
+    <section class="resume-hero" aria-labelledby="resume-title" data-page-node-id="kKF2wrG555BN36YDgZu9Qd">
+      <div class="container" data-page-node-id="8jAWIAL1t3aDbX0mnSgTtp">
+        <p class="kicker reveal" data-page-node-id="YZ4zCBFsgADs33UexVIiHb">个人简历 / Resume</p>
+        <h1 class="resume-name reveal" id="resume-title" data-page-node-id="X3uuergmyu5sRKK1ZKlqGD">公开简历<span class="en"
+            data-page-node-id="o3uQfzVFwZ2KUDvXDgdX5C">Your Name</span></h1>
+        <p class="resume-role reveal" data-page-node-id="9QzIV5nyBJ4Wzbc7fyR7xn">全栈开发工程师 · Java / Python</p>
+        <p class="resume-contact reveal" data-page-node-id="EkcFSCL0Lqa1bmMmW4cy3r">
+          <span data-page-node-id="REvmaUbBLhsX23vWprUER5">拥有 Java 后端与 Python 脚本开发经验，可独立承接企业官网、小程序、后台管理系统等定制开发需求。
+            后端熟悉 Spring Boot、MyBatis、MySQL，能够编写复杂 SQL 并做索引优化，了解 Redis 缓存；
+            前端掌握 Vue、HTML / CSS / JavaScript，熟悉 uni-app 小程序开发，能够完成从需求对接、
+            数据库设计、编码实现到部署上线的完整流程。支持源码交付、部署文档与后期维护。</span>
         </p>
-        <div class="hero-actions reveal">
-          <a href="resume.pdf" download="林远-个人简历.pdf" class="btn btn-primary">下载 PDF<span aria-hidden="true">↓</span></a>
-          <a href="resume.docx" download="林远-个人简历.docx" class="btn btn-ghost">下载 Word</a>
+        <div class="resume-actions reveal" data-page-node-id="oA4tqCjTjc3x0E9HVoBDEx">
+          <a href="resume.pdf" download="Alan-个人简历.pdf" class="btn btn-primary"
+            data-page-node-id="LbKvjT3ecXQYmndYDrOtyr">下载简历<span aria-hidden="true"
+              data-page-node-id="n4ZuxZGaeaDHHiyJAS4A2F">↓</span></a>
         </div>
       </div>
     </section>
 
     <!-- 01 个人简介 -->
-    <section class="section" id="summary" aria-labelledby="summary-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">01</span>
-          <h2 id="summary-title">个人简介<span class="title-en">Summary</span></h2>
+    <!-- <section class="section" id="summary" aria-labelledby="summary-title" data-page-node-id="EYVB0jXjv8VVFXyyOC6ZXB">
+      <div class="container" data-page-node-id="ao1zGa6gjFGegpvoBb3v53">
+        <header class="section-head reveal" data-page-node-id="mYCCSFLInk01fJsfjuZc9L">
+          <span class="section-no" data-page-node-id="fMzsrxHrMCryYM520IgmbW">01</span>
+          <h2 id="summary-title" data-page-node-id="Qs9ZvHhLihJ2zgKFxxPs3j">个人简介<span class="title-en"
+              data-page-node-id="JFKOVo5YouYk6KfFbpmvCC">Summary</span></h2>
         </header>
-        <p class="resume-summary reveal">
-          8 年互联网从业经验的全栈工程师，专注用代码解决真实问题。主导过支付网关重构、低代码平台引擎等核心项目，
-          也独立打造过从 0 到 1 的开源产品。相信简洁的代码和克制的设计，对工程美学有一点执念。
+        <p class="resume-summary reveal" data-page-node-id="TPdYJDhkIK5bIUUgqgAbV7">
+          拥有 Java 后端与 Python 脚本开发经验，可独立承接企业官网、小程序、后台管理系统等定制开发需求。
+          后端熟悉 Spring Boot、MyBatis、MySQL，能够编写复杂 SQL 并做索引优化，了解 Redis 缓存；
+          前端掌握 Vue、HTML / CSS / JavaScript，熟悉 uni-app 小程序开发，能够完成从需求对接、
+          数据库设计、编码实现到部署上线的完整流程。支持源码交付、部署文档与后期维护。
         </p>
       </div>
-    </section>
+    </section> -->
 
     <!-- 02 核心技能 -->
-    <section class="section section-tint" id="skills" aria-labelledby="rskills-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">02</span>
-          <h2 id="rskills-title">核心技能<span class="title-en">Skills</span></h2>
+    <section class="section section-invert" id="skills" aria-labelledby="rskills-title"
+      data-page-node-id="BOG0KinlAiPOGeU7hrf5SG">
+      <div class="container" data-page-node-id="LS4wdWOqiyNrLHF3Fdhyvx">
+        <header class="section-head reveal" data-page-node-id="C8aKb1AEdfBpSjekvygqaM">
+          <h2 id="rskills-title" data-page-node-id="RajMUAbda4KSK0dRzW092S">核心技能<span class="title-en"
+              data-page-node-id="HxR1G10zAO4rqHXBfFVKQE">Skills</span></h2>
         </header>
-        <ul class="skill-lines">
-          <li class="reveal"><strong>前端开发</strong><span>TypeScript / React / Vue / Vite / Web Components，可访问性与性能优化</span></li>
-          <li class="reveal"><strong>后端架构</strong><span>Node.js / Go / Python / PostgreSQL / GraphQL，高并发与领域建模</span></li>
-          <li class="reveal"><strong>云与运维</strong><span>Docker / Kubernetes / CI/CD，监控告警体系搭建</span></li>
-          <li class="reveal"><strong>设计协作</strong><span>Figma / 设计系统 / UX 基础，能独立完成产品原型</span></li>
+        <ul class="skill-lines" data-page-node-id="YBOFhFQfflUQm6k2F8JUFB">
+          <li class="reveal" data-page-node-id="X0Dev3gzQ0wXlBpyqPm6nb"><strong
+              data-page-node-id="FOmmmNwjnBOA6o7MfL7dGU">Java 后端</strong><span
+              data-page-node-id="MC1dYXekfJQEB9mmNYYqre">Java 语言开发，SpringMVC / Spring Boot /
+              MyBatis，可独立完成业务接口设计与实现</span></li>
+          <li class="reveal" data-page-node-id="rWo53O4bdgTEBBOiwPdx43"><strong
+              data-page-node-id="aKxbKAS8OyPja8l8Wk1SUX">数据库</strong><span data-page-node-id="Se3B70UHQ1IRpVjqr0cxfj">复杂
+              SQL 编写与索引优化，MySQL / MariaDB，了解 Oracle、Redis</span></li>
+          <li class="reveal" data-page-node-id="N4V08FYEWbeqYv0Qy8qhKc"><strong
+              data-page-node-id="oY2A47gRD97z5RLrZJQj8H">前端页面</strong><span
+              data-page-node-id="y8pf681Io2dlQnc843lzB0">HTML / CSS / JavaScript，Vue 3 + Element Plus，uni-app
+              小程序开发</span></li>
+          <li class="reveal" data-page-node-id="C7qChQwAicwXH1cdI1g8Ly"><strong
+              data-page-node-id="ufi8js21CCtnDGieYxrB3s">Python 脚本</strong><span
+              data-page-node-id="CU0ZpOAQ949LCglDsVOu6I">自动化工具与数据处理，FastAPI 接口开发，Excel / 文件批量处理</span></li>
+          <li class="reveal" data-page-node-id="wHu7tPtuCfGJSqiPFsRwqC"><strong
+              data-page-node-id="UIGonGC3A9ukvyPPzDJxW9">服务与环境</strong><span
+              data-page-node-id="DaZAH2dFsEWRCSdldDoYBX">Tomcat / Nginx 配置，Docker 容器化部署，Linux 常用命令</span></li>
+          <li class="reveal" data-page-node-id="67ziYtQ9xFUyhT5x2N9lBL"><strong
+              data-page-node-id="467K9N5FW8A638ysLkeHeR">开发工具</strong><span
+              data-page-node-id="3hWSnIsbFDGwLGhrbEfYM7">IDEA / Maven / Git / VSCode / Navicat / Xshell</span></li>
         </ul>
       </div>
     </section>
 
     <!-- 03 工作经历 -->
-    <section class="section" id="rexperience" aria-labelledby="rexp-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">03</span>
-          <h2 id="rexp-title">工作经历<span class="title-en">Experience</span></h2>
+    <section class="section" id="experience" aria-labelledby="rexp-title" data-page-node-id="JqAeveFzlQufu48QD4VExO">
+      <div class="container" data-page-node-id="bsR2x5RAkBdTYbnxpz2Uqr">
+        <header class="section-head reveal" data-page-node-id="nUXqmtYkp3ryl5koa6yUuA">
+          <h2 id="rexp-title" data-page-node-id="EEw4ybbSyQ10DQxulTe4UA">工作经历<span class="title-en"
+              data-page-node-id="lNAM5ji18eNRv0o53uzBjo">Experience</span></h2>
         </header>
-        <ol class="timeline">
-          <li class="timeline-item reveal">
-            <div class="timeline-when">2021 — 至今</div>
-            <div class="timeline-body">
-              <h3>高级全栈工程师 <span class="timeline-org">@ 云帆科技</span></h3>
-              <p>负责低代码平台核心引擎与运行时，服务 200+ 企业客户；带领 6 人小组完成多端渲染架构升级，页面性能提升 3 倍；推动团队 CI/CD 与自动化测试覆盖率到 80%。</p>
+        <ol class="timeline" data-page-node-id="amFkjnuQ84nZqHglBQDqfk">
+          <li class="timeline-item reveal" data-page-node-id="fWj0g5x9Jd9NFYCFT6c72Y">
+            <div class="timeline-when" data-page-node-id="CRneDJfUTbIQUCIGboCg2v">2024.03 — 至今</div>
+            <div class="timeline-body" data-page-node-id="5ySi8MztTvdPNBwK2j3xFd">
+              <h3 data-page-node-id="jgiTX2rSUzsYRKO6BHw9G8">独立开发者 / 自由职业 <span class="timeline-org"
+                  data-page-node-id="PMx5ZITPyev8WamFwXTijv">@ 远程协作</span></h3>
+              <p data-page-node-id="c3fptvhQJUI8WpAykCqFYF">
+                承接企业官网、微信小程序与内部管理系统的定制开发，独立完成需求沟通、方案设计、编码交付与上线部署，源码与部署文档一并交付。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">2018 — 2021</div>
-            <div class="timeline-body">
-              <h3>全栈工程师 <span class="timeline-org">@ 极客电商</span></h3>
-              <p>主导支付网关重构，支撑大促期间每秒 2 万笔订单；搭建内部监控告警体系，线上故障平均恢复时间下降 60%。</p>
+          <li class="timeline-item reveal" data-page-node-id="i4wE0PeurEr310L0xxnqry">
+            <div class="timeline-when" data-page-node-id="g6iDmyACICgM6ClQQ01Rlr">2021.12 — 2023.06</div>
+            <div class="timeline-body" data-page-node-id="PcYp70hn75654FCIxNmhv0">
+              <h3 data-page-node-id="CHLqs4SfbVaivzmIrzLdNN">Java 开发工程师 <span class="timeline-org"
+                  data-page-node-id="ffNmrjSu1FuQWVxLgwF8Xh">@ 软件科技有限公司</span></h3>
+              <p data-page-node-id="rxOpwKIyops1ktZxAt6R28">负责数字化营销获客系统采集信息模块的开发与维护，编写项目使用文档，协助系统代码实现与线上问题排查。</p>
             </div>
           </li>
-          <li class="timeline-item reveal">
-            <div class="timeline-when">2016 — 2018</div>
-            <div class="timeline-body">
-              <h3>初级前端工程师 <span class="timeline-org">@ 星河互娱</span></h3>
-              <p>从活动页开发起步，成长为项目组前端负责人，沉淀并推广组件规范。</p>
+          <li class="timeline-item reveal" data-page-node-id="6fwwTsvJXncPSUsV4hE4h8">
+            <div class="timeline-when" data-page-node-id="Rikt2JYedQlPWRS1LlHLLA">2016.08 — 2018.03</div>
+            <div class="timeline-body" data-page-node-id="ObMvisjAeTIn3xsKCwM4EI">
+              <h3 data-page-node-id="gUd2xeNqotHu0Ql4ddLso4">Java 开发工程师 <span class="timeline-org"
+                  data-page-node-id="CGCMdek7RWJMVH67B4GViC">@ 互联网科技有限公司</span></h3>
+              <p data-page-node-id="498LLlJt4Kiwqz5gQPHTlJ">参与金融债券评估、信用档案、文件推送等企业级系统开发，负责需求分析、代码实现、测试与部署。</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal" data-page-node-id="sgZBVAE3d1dgO09poFXDwg">
+            <div class="timeline-when" data-page-node-id="4PAer1ouuoArCCE59kYffn">2015.07 — 2016.08</div>
+            <div class="timeline-body" data-page-node-id="8ohtCcEis4Ezv0Yu9WQgfE">
+              <h3 data-page-node-id="Z8OmhD8MS0NEtxNivSTj36">Java 开发工程师 <span class="timeline-org"
+                  data-page-node-id="tx3OQ7JhfWUVXaHB235VGD">@ 技术服务有限公司</span></h3>
+              <p data-page-node-id="9XiLoDcND9rknAvtP31zOP">参与 ERP 典当业务与投资借贷平台的模块开发，承担代码实现、调试、测试与维护工作。</p>
             </div>
           </li>
         </ol>
@@ -225,55 +1127,143 @@
     </section>
 
     <!-- 04 项目经历 -->
-    <section class="section section-tint" id="projects" aria-labelledby="proj-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">04</span>
-          <h2 id="proj-title">项目经历<span class="title-en">Projects</span></h2>
+    <section class="section section-invert" id="projects" aria-labelledby="rproj-title"
+      data-page-node-id="6FJUtR0QFOCCO19v7JtrK7">
+      <div class="container" data-page-node-id="193gxudDFCR9kZAANoaAma">
+        <header class="section-head reveal" data-page-node-id="qKfGyaeCxZqyJQvVPQ97xU">
+          <h2 id="rproj-title" data-page-node-id="Oz748HoWEv7sMpMyYykil1">项目经历<span class="title-en"
+              data-page-node-id="Kt7PfUoB4ImPkDZRKarQNe">Projects</span></h2>
         </header>
-        <div class="project-item reveal">
-          <div class="when">12k+ Star</div>
-          <div>
-            <h3>Ink UI · 开源组件库</h3>
-            <p>零依赖 Web Components 组件库，坚持可访问性优先，被多个中大型项目采用。</p>
+
+        <div class="project-item reveal" data-page-node-id="C2XnG7yKFX59QKiDooB2tU">
+          <div class="when" data-page-node-id="wtBcAWdCOwQSlHARv6Sv9I">2026</div>
+          <div data-page-node-id="Y1HGA4tUbj9AgwiKgQJZ8b">
+            <h3 data-page-node-id="kOA5EqiyJQgQsBCfVATvfF">用药记录小程序</h3>
+            <p data-page-node-id="WDpKga2XlFPFeKOgf4AYoR">面向慢性病患者的用药管理工具，包含今日待服、药箱、历史记录与个人中心四大模块，支持多套主题切换与按月统计。</p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="TyoOe04n1w8Hh1tKeo0myM">
+              <li data-page-node-id="FF7hWo1xY3q4GY7iBJCHwf">uni-app</li>
+              <li data-page-node-id="X4T7fZuf1nCk9dvEysf1EA">Spring Boot</li>
+              <li data-page-node-id="PquHKcH7AvXTOJfsluIoMR">JPA</li>
+              <li data-page-node-id="cMGJ6QmToH5JaxIAosMK99">MariaDB</li>
+            </ul>
           </div>
         </div>
-        <div class="project-item reveal">
-          <div class="when">独立开发</div>
-          <div>
-            <h3>Slice · 极简待办应用</h3>
-            <p>「今天只做三件事」的效率工具，Vue + PWA + IndexedDB，纯离线可用。</p>
+
+        <div class="project-item reveal" data-page-node-id="J0NCwCnRlktCf8h5HGewoA">
+          <div class="when" data-page-node-id="FDuK22Pb7BD3QZ8iZQNRN1">2026</div>
+          <div data-page-node-id="rpUEo5sbZmqX16i9eOtkT4">
+            <h3 data-page-node-id="dTJbW6b5anC2QkievnOzK5">企业官网定制</h3>
+            <p data-page-node-id="biYZT2oa8C2pR4IxIhudzt">为中小企业打造的高端展示型官网，融合极简排版与东方建筑元素，响应式适配桌面、平板与手机。</p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="oUxCY1gZLEdT3iLskHz1fm">
+              <li data-page-node-id="qIOjfdhakPXHo13Gq6fieG">HTML / CSS</li>
+              <li data-page-node-id="MYOV6tS9PIBwSDCBHoRvuw">JavaScript</li>
+              <li data-page-node-id="IKC0iQ5aXQaLhKl1oWvZa4">响应式</li>
+              <li data-page-node-id="BpxI444OukEV6xgmAioGrR">Nginx</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-page-node-id="tiq8DORTDyYK8BHLvacV95">
+          <div class="when" data-page-node-id="IcTMeFdED1wJdup6CaADTk">2026</div>
+          <div data-page-node-id="shBofEABSHFA2yUp2lhhQT">
+            <h3 data-page-node-id="4H0FXgC6QHWPwAO7HZVqFm">多租户管理后台</h3>
+            <p data-page-node-id="CS78ETEjGavUbbi1I1ZuzI">面向 SaaS 场景的多租户管理后台，涵盖租户管理、套餐计费与配额、功能门控三大模块，配套完整 Design System。
+            </p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="RbHz2uo4JYNHsIRWvSOtNB">
+              <li data-page-node-id="snia3oG9S3jqh3hhvY3gZC">Vue 3</li>
+              <li data-page-node-id="cwFVJrsSO55XfmJSa04h3k">Element Plus</li>
+              <li data-page-node-id="UComskVlNTODI1iAzXOIm7">Java</li>
+              <li data-page-node-id="soCXv4tIWDAZ3UwAQEFTI7">Design System</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-page-node-id="oIaufxYTVQ6oJwPzflblnI">
+          <div class="when" data-page-node-id="jbMGFHMtf9LBUH8Deu07Nc">2026</div>
+          <div data-page-node-id="d21p2kGLlsft4Ks90DMqFD">
+            <h3 data-page-node-id="XFzNeCY3TGpSkXp2ZauqsZ">视频解析下载工具</h3>
+            <p data-page-node-id="v6anlr34xAIcPxrT9lDeqF">本地运行的视频下载工具，支持从含表情与话题标签的分享文本中自动抽取链接，下载完成后即时预览播放。</p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="H3Ra5GSZWrKxQKkf0luTMv">
+              <li data-page-node-id="3AQSbQQ2FcdILAveiR23gK">Vue 3</li>
+              <li data-page-node-id="YuWbsOGMPLf0t4jR78FRe4">FastAPI</li>
+              <li data-page-node-id="1Kh9iAczbmPFHi0Z13b9kU">Vant</li>
+              <li data-page-node-id="edI8JJaYqAvQAOuuYL900C">TypeScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-page-node-id="TDc0IPBIq2VALlHAq55HD3">
+          <div class="when" data-page-node-id="W2LIVLipwWhozZckp8ynUH">2025</div>
+          <div data-page-node-id="HVPX7fvIRsRaQHUqek4LQ6">
+            <h3 data-page-node-id="Ld4rsttAONPYV2OUjfevdD">Excel 批量改名助手</h3>
+            <p data-page-node-id="MreAmm04CvFt4w8QGsJco6">读取 Excel 指定字段，批量生成文件名并完成重命名，替代人工逐个修改，处理上千条记录仅需数秒。</p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="kBAR1HkSPBB7xpquFYUp2w">
+              <li data-page-node-id="5A70lKoMdigDBG8RD4zvrH">Python</li>
+              <li data-page-node-id="rRJ2hSypTqW1Xsgu7U48TG">openpyxl</li>
+              <li data-page-node-id="oxlP5ULlWKU1L3zgCjfxBj">自动化</li>
+              <li data-page-node-id="t3qyEFwQwBHeRWMBD0lD8v">CLI</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-item reveal" data-page-node-id="6t5mQtvrLmRNCiTYW500So">
+          <div class="when" data-page-node-id="H1wzV0dORilHMSl2DEkwmS">2025</div>
+          <div data-page-node-id="qvONkswEweubJFH98Es7qO">
+            <h3 data-page-node-id="aT3ONemGV6spNNvgFjX3oE">运营数据看板</h3>
+            <p data-page-node-id="Vn1nvCS9iByanwTTaANSHN">将分散的业务数据汇总为统一看板，按日 / 周 / 月多维对比，自动输出结构化报表，辅助运营决策。</p>
+            <ul class="project-tags" aria-label="项目标签" data-page-node-id="JAiGSOg0KL1uoxXCJZ40NE">
+              <li data-page-node-id="ZZj5NAvjHHbF5JCppjCqdS">Python</li>
+              <li data-page-node-id="fwmBRx8VuekuXVotn9iIm9">SQL</li>
+              <li data-page-node-id="Z9O0RiLWjPouLF0VTa9d7C">ECharts</li>
+              <li data-page-node-id="Q80CAu9gAjnQ4memFDsShr">报表导出</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 05 教育背景 -->
-    <section class="section" id="education" aria-labelledby="edu-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-no">05</span>
-          <h2 id="edu-title">教育背景<span class="title-en">Education</span></h2>
+    <section class="section" id="education" aria-labelledby="edu-title" data-page-node-id="yq0j3FOaZCwSaUni30QlNd">
+      <div class="container" data-page-node-id="l3IWUnE7D89aXqFmNaLsnZ">
+        <header class="section-head reveal" data-page-node-id="f7jTgS10dgGkxSOmHZWS2n">
+          <h2 id="edu-title" data-page-node-id="uEMA4zuugvf6j8gMhVtBwj">教育背景<span class="title-en"
+              data-page-node-id="kEzF7lVJDaZ8sFxA7KAOBD">Education</span></h2>
         </header>
-        <div class="education reveal">
-          <span class="section-no edu-when">2012 — 2016</span>
-          <div>
-            <h3>郑州航空工业管理学院 · 计算机科学与技术 <span class="timeline-org">学士</span></h3>
+        <div class="education reveal" data-page-node-id="Je6BLKYMfP55nPZsnPKeHI">
+          <span class="section-no" data-page-node-id="Y8G29QP2Ha6wiW8bVGmDP6"></span>
+          <div data-page-node-id="hHgFx7K0fyFYLm51J9hca4">
+            <h4 data-page-node-id="e5HlpG6UnOpRace3gAwalD">郑州航空工业管理学院 · 计算机科学与技术 <span class="timeline-org"
+                data-page-node-id="gpE9yY8tqZB1F14g4AG8bS">本科</span></h4>
+            <p data-page-node-id="RBxqfoa0k58fHYbV6SCY2q">主修程序设计、数据结构、数据库原理、计算机网络。</p>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-wordmark" aria-hidden="true">林远</p>
-      <p>© <span id="year">2026</span> 林远 · 个人简历 · <a href="index.html">返回首页 ↑</a></p>
+  <footer class="site-footer" data-page-node-id="qaDj1P9yDp5b6lbNdQRQIu">
+    <div class="container" data-page-node-id="uDH7wg0MRmFM6TXZsQQbY0">
+      <p data-page-node-id="b3guW7LsSzfJFZdBaU6V5H">© <span id="year"
+          data-page-node-id="WzpReibrj5TTTw9LfWkTbx">2026</span> Alan · 个人简历 · <a href="index.html"
+          data-page-node-id="H3v7JMM3fMOgg8xM16PncH">返回首页 ↑</a></p>
     </div>
   </footer>
 
   <script>
-    // 滚动显现
+    // 滚动进度条
+    const progress = document.getElementById('progress');
+    const header = document.querySelector('.site-header');
+    const onScroll = () => {
+      const y = window.scrollY;
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.transform = 'scaleX(' + (h > 0 ? Math.min(y / h, 1) : 0) + ')';
+      header.classList.toggle('scrolled', y > 24);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+
+    // 入场动画
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
@@ -281,14 +1271,8 @@
           io.unobserve(e.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
     document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-
-    // 吸顶导航阴影
-    const header = document.querySelector('.site-header');
-    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
 
     // 移动端菜单
     const navToggle = document.querySelector('.nav-toggle');
@@ -310,9 +1294,11 @@
         navToggle.focus();
       }
     });
+    window.addEventListener('resize', () => { if (window.innerWidth > 980) closeMenu(); });
 
     // 年份
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
