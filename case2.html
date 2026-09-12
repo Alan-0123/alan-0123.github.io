@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国风山水印花T恤 - 商品详情页</title>
+<style>
+  :root {
+    --color-bg: #FAFAF8;
+    --color-dark: #1A1A2E;
+    --color-accent: #5B7B6F;
+    --color-accent-warm: #B8860B;
+    --color-text: #2C2C2C;
+    --color-text-secondary: #666;
+    --color-border: #E8E6E1;
+    --color-white: #FFFFFF;
+    --width: 750px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    background: #E8E6E1;
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: var(--width);
+    margin: 0 auto;
+    background: var(--color-bg);
+  }
+
+  /* ===== Module 1: Hero ===== */
+  .hero {
+    position: relative;
+    background: linear-gradient(180deg, #F5F3EE 0%, #EDEAE3 100%);
+    overflow: hidden;
+  }
+  .hero-img {
+    width: 100%;
+    display: block;
+  }
+  .hero-text {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 38%;
+  }
+  .hero-tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--color-accent-warm);
+    border: 1px solid var(--color-accent-warm);
+    padding: 3px 10px;
+    margin-bottom: 14px;
+  }
+  .hero-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-dark);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .hero-title span {
+    white-space: nowrap;
+  }
+  .hero-subtitle {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .hero-benefits {
+    list-style: none;
+  }
+  .hero-benefits li {
+    font-size: 13px;
+    color: var(--color-text);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-benefits li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--color-accent-warm);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ===== Section Divider ===== */
+  .divider {
+    height: 1px;
+    background: var(--color-border);
+    margin: 0;
+  }
+
+  /* ===== Module 2: Pain Points ===== */
+  .painpoints {
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 48px 40px;
+  }
+  .painpoints .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .painpoints .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 28px;
+  }
+  .painpoints .section-title span {
+    white-space: nowrap;
+  }
+  .painpoints-list {
+    list-style: none;
+    margin-bottom: 36px;
+  }
+  .painpoints-list li {
+    font-size: 15px;
+    color: rgba(255,255,255,0.8);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-left: 20px;
+    position: relative;
+  }
+  .painpoints-list li::before {
+    content: "?";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent-warm);
+    font-weight: 700;
+  }
+  .painpoints-img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    opacity: 0.9;
+  }
+
+  /* ===== Module 3: Core Benefits ===== */
+  .benefits {
+    padding: 48px 40px;
+  }
+  .benefits .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+  .benefits .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 32px;
+  }
+  .benefits .section-title span {
+    white-space: nowrap;
+  }
+  .benefit-item {
+    margin-bottom: 36px;
+  }
+  .benefit-item:last-child {
+    margin-bottom: 0;
+  }
+  .benefit-text {
+    margin-bottom: 16px;
+  }
+  .benefit-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .benefit-text h3 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .benefit-text p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    padding-left: 38px;
+  }
+  .benefit-img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* ===== Module 4: Details ===== */
+  .details {
+    background: #F0EDE8;
+    padding: 48px 40px;
+  }
+  .details .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+  .details .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 32px;
+  }
+  .details .section-title span {
+    white-space: nowrap;
+  }
+  .detail-item {
+    margin-bottom: 32px;
+  }
+  .detail-item:last-child {
+    margin-bottom: 0;
+  }
+  .detail-text {
+    margin-bottom: 16px;
+  }
+  .detail-text h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 6px;
+  }
+  .detail-text p {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+  }
+  .detail-img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* ===== Module 5: Model ===== */
+  .model {
+    position: relative;
+  }
+  .model-img {
+    width: 100%;
+    display: block;
+  }
+  .model-text {
+    position: absolute;
+    bottom: 8%;
+    left: 6%;
+    width: 40%;
+    background: rgba(26,26,46,0.85);
+    padding: 24px 20px;
+    border-radius: 4px;
+  }
+  .model-text .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+  }
+  .model-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .model-text h2 span {
+    white-space: nowrap;
+  }
+  .model-text p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+  }
+
+  /* ===== Module 6: Specs ===== */
+  .specs {
+    padding: 48px 40px;
+  }
+  .specs .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+  .specs .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 28px;
+  }
+  .specs .section-title span {
+    white-space: nowrap;
+  }
+  .specs-img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 28px;
+  }
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 28px;
+  }
+  .spec-table th,
+  .spec-table td {
+    padding: 12px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+  }
+  .spec-table th {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    width: 35%;
+    background: #F8F7F4;
+  }
+  .spec-table td {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+  .size-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 14px;
+  }
+  .size-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .size-table th,
+  .size-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .size-table th {
+    background: var(--color-dark);
+    color: #fff;
+    font-weight: 600;
+  }
+  .size-table td {
+    color: var(--color-text);
+  }
+  .size-table tr:nth-child(even) td {
+    background: #F8F7F4;
+  }
+
+  /* ===== Module 7: Packaging ===== */
+  .packaging {
+    background: #F0EDE8;
+    padding: 48px 40px;
+  }
+  .packaging .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+  .packaging .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 28px;
+  }
+  .packaging .section-title span {
+    white-space: nowrap;
+  }
+  .packaging-img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 24px;
+  }
+  .packaging-list {
+    list-style: none;
+  }
+  .packaging-list li {
+    font-size: 14px;
+    color: var(--color-text);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .packaging-list li .icon {
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  /* ===== Module 8: FAQ ===== */
+  .faq {
+    padding: 48px 40px 56px;
+  }
+  .faq .section-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+  .faq .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 28px;
+  }
+  .faq .section-title span {
+    white-space: nowrap;
+  }
+  .faq-item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .faq-q {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .faq-q .q-mark {
+    color: var(--color-accent-warm);
+    flex-shrink: 0;
+  }
+  .faq-a {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    padding-left: 24px;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    background: var(--color-dark);
+    padding: 20px 40px;
+    text-align: center;
+  }
+  .footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Module 1: Hero -->
+  <section class="hero">
+    <img class="hero-img" src="assets/module1_hero.jpg" alt="国风山水印花T恤">
+    <div class="hero-text">
+      <div class="hero-tag">NEW ARRIVAL</div>
+      <h1 class="hero-title">
+        <span>国风山水</span><br><span>印花T恤</span>
+      </h1>
+      <p class="hero-subtitle">将东方美学穿在身上</p>
+      <ul class="hero-benefits">
+        <li>原创屏风式山水印花设计</li>
+        <li>精选纯棉面料 亲肤透气</li>
+        <li>经典圆领版型 百搭不挑人</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 2: Pain Points -->
+  <section class="painpoints">
+    <div class="section-label">PAIN POINTS</div>
+    <h2 class="section-title">
+      <span>你的衣橱，</span><br><span>还缺一件有故事的T恤</span>
+    </h2>
+    <ul class="painpoints-list">
+      <li>纯色T恤太单调？出门总撞衫？</li>
+      <li>想表达文化品位，又怕太张扬？</li>
+      <li>这件国风T恤，让日常穿搭多一分雅致</li>
+    </ul>
+    <img class="painpoints-img" src="assets/module2_painpoint.jpg" alt="衣橱场景">
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 3: Core Benefits -->
+  <section class="benefits">
+    <div class="section-label">CORE BENEFITS</div>
+    <h2 class="section-title"><span>三大核心优势</span></h2>
+
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <h3><span class="num">1</span> 原创国风设计</h3>
+        <p>屏风式构图，融合传统山水画的意境与现代审美，每一处细节都经得起推敲。</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <h3><span class="num">2</span> 文化品位表达</h3>
+        <p>穿在身上的东方美学，低调中彰显文化修养，适合日常通勤与休闲出行。</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-text">
+        <h3><span class="num">3</span> 舒适穿着体验</h3>
+        <p>精选优质面料，柔软亲肤，透气吸汗，四季皆宜。</p>
+      </div>
+    </div>
+
+    <img class="benefit-img" src="assets/module3_sellingpoint.jpg" alt="印花细节特写">
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 4: Details -->
+  <section class="details">
+    <div class="section-label">CRAFTSMANSHIP</div>
+    <h2 class="section-title"><span>每一处细节，都是品质的证明</span></h2>
+
+    <div class="detail-item">
+      <div class="detail-text">
+        <h3>面料质感</h3>
+        <p>精选纯棉面料，手感柔软细腻，透气性佳，贴身穿着舒适无负担。</p>
+      </div>
+    </div>
+
+    <div class="detail-item">
+      <div class="detail-text">
+        <h3>印花工艺</h3>
+        <p>采用高清数码印花技术，色彩饱满持久，水洗不易褪色，图案清晰细腻。</p>
+      </div>
+    </div>
+
+    <div class="detail-item">
+      <div class="detail-text">
+        <h3>做工细节</h3>
+        <p>领口加固处理，不易变形；走线工整均匀，品质看得见。</p>
+      </div>
+    </div>
+
+    <img class="detail-img" src="assets/module4_detail.jpg" alt="面料与做工细节">
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 5: Model -->
+  <section class="model">
+    <img class="model-img" src="assets/module5_model.jpg" alt="模特穿着展示">
+    <div class="model-text">
+      <div class="section-label">ON BODY</div>
+      <h2><span>上身效果</span></h2>
+      <p>宽松版型，不挑身材。搭配牛仔裤、休闲裤均可，轻松驾驭多种风格。</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 6: Specs -->
+  <section class="specs">
+    <div class="section-label">SPECIFICATIONS</div>
+    <h2 class="section-title"><span>产品参数</span></h2>
+
+    <img class="specs-img" src="assets/module6_specs.jpg" alt="产品平铺尺寸">
+
+    <table class="spec-table">
+      <tr><th>面料成分</th><td>棉</td></tr>
+      <tr><th>版型</th><td>宽松</td></tr>
+      <tr><th>领型</th><td>圆领</td></tr>
+      <tr><th>袖长</th><td>短袖</td></tr>
+      <tr><th>印花工艺</th><td>数码印花</td></tr>
+      <tr><th>适用季节</th><td>春夏秋</td></tr>
+      <tr><th>洗涤建议</th><td>30℃以下水温手洗，不可漂白，悬挂晾干</td></tr>
+    </table>
+
+    <h3 class="size-title">尺码参考</h3>
+    <table class="size-table">
+      <tr><th>尺码</th><th>肩宽(cm)</th><th>胸围(cm)</th><th>衣长(cm)</th></tr>
+      <tr><td>M</td><td>44</td><td>104</td><td>68</td></tr>
+      <tr><td>L</td><td>46</td><td>108</td><td>70</td></tr>
+      <tr><td>XL</td><td>48</td><td>112</td><td>72</td></tr>
+      <tr><td>2XL</td><td>50</td><td>116</td><td>74</td></tr>
+      <tr><td>3XL</td><td>52</td><td>120</td><td>76</td></tr>
+    </table>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 7: Packaging -->
+  <section class="packaging">
+    <div class="section-label">PACKAGING</div>
+    <h2 class="section-title"><span>包装与发货</span></h2>
+
+    <img class="packaging-img" src="assets/module7_packaging.jpg" alt="产品包装">
+
+    <ul class="packaging-list">
+      <li><span class="icon">&#128230;</span> 简约环保包装，保护衣物整洁</li>
+      <li><span class="icon">&#9201;</span> 下单后48小时内发货</li>
+      <li><span class="icon">&#128260;</span> 支持7天无理由退换</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Module 8: FAQ -->
+  <section class="faq">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title"><span>常见问题</span></h2>
+
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span> 印花会掉色吗？</div>
+      <div class="faq-a">采用高清数码印花工艺，色彩牢固，正常洗涤不易褪色。建议30℃以下水温手洗，避免长时间浸泡。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span> 版型偏大还是偏小？</div>
+      <div class="faq-a">宽松版型，建议按正常尺码选择。喜欢更宽松效果可选大一码。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span> 面料会不会起球？</div>
+      <div class="faq-a">精选优质棉面料，正常穿着不易起球。避免与粗糙物品摩擦可延长衣物寿命。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q"><span class="q-mark">Q</span> 可以机洗吗？</div>
+      <div class="faq-a">建议手洗或轻柔机洗，使用中性洗涤剂，不可漂白，悬挂晾干，避免暴晒。</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>国风山水印花T恤 · 商品详情页</p>
+  </div>
+
+</div>
+
+</body>
+</html>
